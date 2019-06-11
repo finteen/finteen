@@ -13,7 +13,6 @@ function App() {
           <Route path="/mydreams/" component={MyDreams} />
           <Route path="/loginform/" component={LogInForm} />
       </Switch>
-      
     </div>
   );
 }
