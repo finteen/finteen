@@ -1,7 +1,7 @@
 import React from 'react';
 
-const Button = () => (
+const ButtonLogin = () => (
   <button className="button-log" type="button">Log In</button>
 );
 
-export default Button;
+export default ButtonLogin;
