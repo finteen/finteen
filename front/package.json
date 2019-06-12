@@ -11,6 +11,7 @@
     "react-router-dom": "^5.0.0",
     "react-scripts": "3.0.1"
   },
+  "proxy": "localhost:5000",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -18,7 +19,23 @@
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
-    "extends": "react-app"
+    "extends": "airbnb",
+    "parser": "babel-eslint",
+    "env": {
+      "es6": true
+    },
+    "parserOptions": {
+      "sourceType": "module"
+    },
+    "rules": {
+      "react/jsx-filename-extension": [
+        "js",
+        "jsx"
+      ],
+      "jsx-a11y/href-no-hash": "off",
+      "jsx-a11y/mouse-events-have-key-events": "off",
+      "react/prop-types": "off"
+    }
   },
   "browserslist": {
     "production": [
