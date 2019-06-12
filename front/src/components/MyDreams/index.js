@@ -4,9 +4,9 @@ import { NavLink } from 'react-router-dom';
 
 const MyDreams = () => (
 
-    <div className="mydreams">
-        <NavLink to="/mydreams/">mydreams</NavLink>
-    </div>
+  <div className="mydreams">
+    <NavLink to="/mydreams/">mydreams</NavLink>
+  </div>
 );
 
 export default MyDreams;
