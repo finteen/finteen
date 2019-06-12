@@ -4,7 +4,6 @@ import { reduxForm, Field } from 'redux-form';
 // import InputField
 import InputField from '../InputField/index';
 
-
 // creation du formulaire:
 let LogInForm = (props) => {
   const { handleSubmit } = props;
