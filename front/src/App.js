@@ -1,6 +1,12 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+// import SignInForm
+import LogInForm from './components/LogInForm';
+
+const handleSubmit = (values) => {
+  console.log(values);
+};
 
 function App() {
   return (
@@ -8,8 +14,13 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Edit
+          <code>src/App.js</code>
+           and save to reload.
         </p>
+        <div className="App-intro">
+          <LogInForm onSubmit={handleSubmit} />
+        </div>
         <a
           className="App-link"
           href="https://reactjs.org"
