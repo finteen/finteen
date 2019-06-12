@@ -6,9 +6,9 @@ import InputField from '../InputField/index';
 
 // creation du formulaire:
 let LogInForm = (props) => {
-  const { handleSubmit } = props;
+  const { onSubmit } = props;
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={onSubmit}>
       <Field
         id="email"
         type="text"
