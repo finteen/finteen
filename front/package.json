@@ -8,11 +8,18 @@
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-redux": "^7.0.3",
+<<<<<<< HEAD
     "react-router-dom": "^5.0.0",
     "react-scripts": "3.0.1",
     "redux": "^4.0.1",
     "redux-form": "^8.2.3"
+=======
+    "react-router-dom": "^5.0.1",
+    "react-scripts": "3.0.1"
+
+>>>>>>> e1fc89bfe30f46ca9d2b5cfeac6490589054139f
   },
+  "proxy": "localhost:5000",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -49,5 +56,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "husky": "^2.4.0"
   }
 }

@@ -1,16 +1,23 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+<<<<<<< HEAD
 // import SignInForm
 import LogInForm from './components/LogInForm';
 
 const handleSubmit = (values) => {
   console.log(values);
 };
+=======
+import { Route, Switch } from 'react-router-dom';
+import MyDreams from './components/MyDreams/index';
+import HomePage from './components/HomePage/index';
+import LogInForm from './components/LogInForm/index';
+>>>>>>> e1fc89bfe30f46ca9d2b5cfeac6490589054139f
 
 function App() {
   return (
     <div className="App">
+<<<<<<< HEAD
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -30,6 +37,13 @@ function App() {
           Learn React
         </a>
       </header>
+=======
+      <Switch>
+        <Route exact path="/" component={HomePage} />
+        <Route path="/mydreams/" component={MyDreams} />
+        <Route path="/loginform/" component={LogInForm} />
+      </Switch>
+>>>>>>> e1fc89bfe30f46ca9d2b5cfeac6490589054139f
     </div>
   );
 }
