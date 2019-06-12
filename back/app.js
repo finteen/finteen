@@ -1,27 +1,15 @@
-const http = require('http');
-const path = require('path');
 const express = require ('express');
 const app =  express();
-/*const bodyParser = require('body-parser');*/
-const getRoutes = require("./routes/get");
+require('dotenv').config()
 
+const loginRouter = require("./routes/auth/login");
 
-/*app.use(bodyParser.urlencoded({extend: false}));
-app.use(bodyPaser.json());
-app.use(express.static(_dirname + '/public'));*/
+const bodyParser = require('body-parser');
+app.use(bodyParser.urlencoded({extend: false}));
+app.use(bodyParser.json());
 
-app.use('/get',getRoutes);
+app.use('/auth',loginRouter);
 
-app.use("/", (req,res)=>{
-    res.send("ok");
-});
-
-app.use(function(req,res,next){
-    var err = new Error('Not Found');
-    err.status = 404;
-    next(err);
-});
-
-let  server  =  app.listen( process.env.PORT  ||  3000, function(){
+const server = app.listen( process.env.PORT  ||  5000, function(){
     console.log('Listening on port '  +  server.address().port);
 });
