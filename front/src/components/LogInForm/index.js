@@ -1,14 +1,14 @@
 /* eslint-disable import/no-mutable-exports */
 import React from 'react';
 import { reduxForm, Field } from 'redux-form';
-// import InputField
+import { Alert } from 'reactstrap';
 import InputField from '../InputField/index';
-
 // creation du formulaire:
 let LogInForm = (props) => {
-  const { onSubmit } = props;
+  const { onSubmit, erreur } = props;
   return (
     <form onSubmit={onSubmit}>
+      <Alert color="danger" isOpen={erreur}>Login failed</Alert>
       <Field
         id="email"
         type="text"
@@ -32,7 +32,7 @@ const validate = (values) => {
 
   if (!values.email) {
     /* console.log('email is required'); */
-    errors.email = 'email is required';
+    errors.email = 'Email is required';
   } else if (!/^.+@.+$/i.test(values.email)) {
     /* console.log('email is invalid'); */
     errors.email = 'Invalid email address';
@@ -40,7 +40,7 @@ const validate = (values) => {
 
   if (!values.password) {
     /* console.log('password is required'); */
-    errors.password = 'password is required';
+    errors.password = 'Password is required';
   }
 
   return errors;
