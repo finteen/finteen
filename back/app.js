@@ -1,7 +1,7 @@
 const express = require ('express');
 const app =  express();
 require('dotenv').config()
-const login = require('./routes/api/user')
+const login = require('./routes/login/login')
 
 //const loginRouter = require("./routes/auth/login");
 //const sequilize =  require('./helpers/conf')

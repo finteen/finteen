@@ -1,4 +1,5 @@
-const Sequelize = require('sequelize')
+const Sequelize = require('../helpers/conf');
+const sequelize = require('sequelize')
 
 const Dreams = sequelize.define('Dreams', {
  dream_description: {

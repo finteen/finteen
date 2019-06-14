@@ -1,4 +1,3 @@
-
 const sequelize =  require('../helpers/conf');
 const Sequelize = require('sequelize')
 
