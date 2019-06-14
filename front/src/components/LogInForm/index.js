@@ -1,28 +1,43 @@
 /* eslint-disable import/no-mutable-exports */
 import React from 'react';
 import { reduxForm, Field } from 'redux-form';
-// import InputField
+import {
+  Form, Button, FormGroup, Container, Row, Col,
+} from 'reactstrap';
 import InputField from '../InputField/index';
+
 
 // creation du formulaire:
 let LogInForm = (props) => {
   const { onSubmit } = props;
   return (
-    <form onSubmit={onSubmit}>
-      <Field
-        id="email"
-        type="text"
-        name="email"
-        component={InputField}
-      />
-      <Field
-        id="password"
-        type="password"
-        name="password"
-        component={InputField}
-      />
-      <button type="submit">Sign in</button>
-    </form>
+    <Container>
+      <Row>
+        <Col xs={{ size: 8, offset: 2 }}>
+          <Form onSubmit={onSubmit}>
+            <FormGroup>
+              <Field
+                id="email"
+                type="email"
+                name="email"
+                component={InputField}
+                placeholder="Votre e-mail"
+                className="form-control"
+              />
+            </FormGroup>
+            <Field
+              id="password"
+              type="password"
+              name="password"
+              component={InputField}
+              placeholder="Votre mot de passe"
+              className="form-control"
+            />
+            <Button color="primary" size="lg" active type="submit">Sign in</Button>
+          </Form>
+        </Col>
+      </Row>
+    </Container>
   );
 };
 

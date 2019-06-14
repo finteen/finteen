@@ -1,22 +1,25 @@
 import React from 'react';
+import './index.css';
 
 const InputField = ({
   id,
   input,
   label,
   type,
+  className,
   meta: { touched, error },
+  placeholder,
 }) => (
-  <div>
-    <label htmlFor={id}>
+  <React.Fragment>
+    <label htmlFor={id} className="label-form">
       {label}
-      <input {...input} type={type} id={id} />
+      <input {...input} type={type} id={id} placeholder={placeholder} className={className} />
     </label>
     {
       touched
       && error
       && <div>{error}</div>}
-  </div>
+  </React.Fragment>
 );
 
 
