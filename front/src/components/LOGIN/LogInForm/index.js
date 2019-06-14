@@ -2,7 +2,7 @@
 import React from 'react';
 import { reduxForm, Field } from 'redux-form';
 // import InputField
-import InputField from '../InputField/index';
+import InputField from '../../FORM/InputField/index';
 
 // creation du formulaire:
 let LogInForm = (props) => {
