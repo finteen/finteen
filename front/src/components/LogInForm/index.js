@@ -47,16 +47,13 @@ const validate = (values) => {
   const errors = {};
 
   if (!values.email) {
-    /* console.log('email is required'); */
-    errors.email = 'Email is required';
+    errors.email = 'email is required';
   } else if (!/^.+@.+$/i.test(values.email)) {
-    /* console.log('email is invalid'); */
     errors.email = 'Invalid email address';
   }
 
   if (!values.password) {
-    /* console.log('password is required'); */
-    errors.password = 'Password is required';
+    errors.password = 'password is required';
   }
 
   return errors;

@@ -1,6 +1,8 @@
 import React from 'react';
-import { MyDreams } from 'react-router-dom';
+import { withRouter } from 'react-router-dom';
 import LogInForm from '../LogInForm/index';
+import Logo from '../../Assets/images/logofinteen.png';
+import LogoSil from '../../Assets/images/logosilouhette.png';
 
 class LoginPage extends React.Component {
   constructor(props) {
@@ -34,11 +36,13 @@ class LoginPage extends React.Component {
     const { err } = this.state;
     return (
       <div>
-        <h1>Log In</h1>
+        <h1 className="titre">Hello</h1>
+        <img className="logo_finteen" src={Logo} alt="logo" />
+        <img className="logo_silouhette" src={LogoSil} alt="logosil" />
         <LogInForm onSubmit={this.handleSubmit} erreur={err} />
       </div>
     );
   }
 }
 
-export default MyDreams(LoginPage);
+export default withRouter(LoginPage);
