@@ -1,15 +1,10 @@
 /* eslint-disable import/no-mutable-exports */
 import React from 'react';
 import { reduxForm, Field } from 'redux-form';
-<<<<<<< HEAD:front/src/components/LogInForm/index.js
 import {
   Form, Button, FormGroup, Container, Row, Col, Alert,
 } from 'reactstrap';
 import InputField from '../InputField/index';
-=======
-// import InputField
-import InputField from '../../FORM/InputField/index';
->>>>>>> 336a3ea252f10e1a344b8f8af73f4fc7c47d4346:front/src/components/LOGIN/LogInForm/index.js
 
 
 // creation du formulaire:
