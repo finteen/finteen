@@ -10,10 +10,11 @@
     "react-redux": "^7.0.3",
     "react-router-dom": "^5.0.0",
     "react-scripts": "3.0.1",
+    "reactstrap": "^8.0.0",
     "redux": "^4.0.1",
     "redux-form": "^8.2.3"
   },
-  "proxy": "htpp://localhost:5000",
+  "proxy": "http://localhost:5000",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -24,7 +25,8 @@
     "extends": "airbnb",
     "parser": "babel-eslint",
     "env": {
-      "es6": true
+      "es6": true,
+      "browser": true
     },
     "parserOptions": {
       "sourceType": "module"
