@@ -12,15 +12,15 @@ class LoginPage extends React.Component {
     };
   }
 
-  handleSubmit = () => {
+  handleSubmit = (values) => {
     const config = {
       method: 'POST',
       headers: {
         'Content-type': 'application/json',
       },
-      body: JSON.stringify(this.state),
+      body: JSON.stringify(values),
     };
-    const url = '/login';
+    const url = '/auth/login';
     const { history } = this.props;
     fetch(url, config)
       .then((res) => {

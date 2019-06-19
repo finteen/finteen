@@ -4,7 +4,7 @@ import './index.css';
 
 const MyDreams = () => (
 
-  <div className="mydreams" />
+  <h1>My Dreams</h1>
 
 );
 

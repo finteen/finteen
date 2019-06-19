@@ -9,12 +9,12 @@ import InputField from '../InputField/index';
 
 // creation du formulaire:
 let LogInForm = (props) => {
-  const { onSubmit, erreur } = props;
+  const { handleSubmit, erreur } = props;
   return (
     <Container>
       <Row>
         <Col xs={{ size: 8, offset: 2 }}>
-          <Form onSubmit={onSubmit}>
+          <Form onSubmit={handleSubmit}>
             <FormGroup>
               <Alert color="danger" isOpen={erreur}>Login Failed</Alert>
               <Field
