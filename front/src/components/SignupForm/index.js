@@ -1,86 +1,103 @@
 /* eslint-disable import/no-mutable-exports */
-    
 import React from 'react';
 import { reduxForm, Field } from 'redux-form';
-import { Form, Button } from 'reactstrap';
-import InputFild from '../InputField/index';
+import {
+  Form, Button, Container, Row, Col, Alert,
+}
+  from 'reactstrap';
+import InputField from '../InputField/index';
 
 
 let SignupForm = (props) => {
   const { handleSubmit, erreur } = props;
   return (
-    <Form onSubmit={handleSubmit}>
-      <Field
-        id="name"
-        type="text"
-        name="name"
-        component={InputFild}
-        placeholder="Votre prénom"
-      />
-      <Field
-        id="lastname"
-        type="text"
-        name="lastname"
-        component={InputFild}
-        placeholeder="Votre nom"
-      />
-      <Field
-        id="email"
-        type="email"
-        name="email"
-        component={InputFild}
-        placeholder="Votre e-mail"
-      />
-      <Field
-        id="age"
-        type="date"
-        name="age"
-        component={InputFild}
-        placeholder="Votre age"
-      />
-      <Field
-        id="sex"
-        type="radio"
-        name="sex"
-        component={InputFild}
-      />
-      <Field
-        id="pseudonyme"
-        type="text"
-        name="pseudo"
-        component={InputFild}
-        placeholder="Votre pseudo"
-      />
-      <Field
-        id="password"
-        type="password"
-        name="password"
-        component={InputFild}
-        placeholder="Votre password"
-      />
-      <Field
-        id="checkpassword"
-        type="password"
-        name="checkpassword"
-        component={InputFild}
-        placeholder="Confirmer votre password"
-      />
-      <Field
-        id="iban"
-        type="iban"
-        name="iban"
-        component={InputFild}
-        placeholder="Votre iban"
-      />
-      <Field
-        id="bic"
-        type="text"
-        name="bic"
-        component={InputFild}
-        placeholder="Votre bic"
-      />
-      <Button>Sign Up</Button>
-    </Form>
+    <Container>
+      <Row>
+        <Col xs={{ size: 8, offset: 2 }}>
+          <Form onSubmit={handleSubmit}>
+            <Alert color="danger" isOpen={erreur}>Signup failed</Alert>
+            <Field
+              id="name"
+              type="text"
+              name="name"
+              component={InputField}
+              placeholder="Votre prénom"
+            />
+            <Field
+              id="lastname"
+              type="text"
+              name="lastname"
+              component={InputField}
+              placeholder="Votre nom"
+            />
+            <Field
+              id="email"
+              type="email"
+              name="email"
+              component={InputField}
+              placeholder="Votre e-mail"
+            />
+            <Field
+              id="mobile"
+              type="number"
+              name="mobile"
+              component={InputField}
+              placeholder="Votre mobile"
+            />
+            <Field
+              id="age"
+              type="date"
+              name="age"
+              component={InputField}
+              placeholder="Votre age"
+            />
+            <Field
+              id="gender"
+              type="text"
+              name="gender"
+              component={InputField}
+              placeholder="Votre genre"
+            />
+            <Field
+              id="pseudonym"
+              type="text"
+              name="pseudonym"
+              component={InputField}
+              placeholder="Votre pseudo"
+            />
+            <Field
+              id="password"
+              type="password"
+              name="password"
+              component={InputField}
+              placeholder="Votre password"
+            />
+            <Field
+              id="checkpassword"
+              type="password"
+              name="checkpassword"
+              component={InputField}
+              placeholder="Confirmer votre password"
+            />
+            <Field
+              id="iban"
+              type="text"
+              name="iban"
+              component={InputField}
+              placeholder="Votre iban"
+            />
+            <Field
+              id="bic"
+              type="text"
+              name="bic"
+              component={InputField}
+              placeholder="Votre bic"
+            />
+            <Button>Sign Up</Button>
+          </Form>
+        </Col>
+      </Row>
+    </Container>
   );
 };
 
@@ -92,16 +109,41 @@ const validate = (values) => {
     errors.name = 'Name too long';
   }
   if (!values.lastname) {
-    errors.name = 'lastname is required';
-  } else if (values.name.lenght > 100) {
-    errors.name = 'lastname too long';
+    errors.lastname = 'lastname is required';
+  } else if (values.lastname.length > 100) {
+    errors.lastname = 'lastname too long';
+  }
+  if (!values.age) {
+    errors.age = 'age is required';
+  }
+  if (!values.gender) {
+    errors.gender = 'gender is required';
+  }
+  if (!values.pseudonym) {
+    errors.pseudonym = 'pseudonym is requiered';
+  } else if (values.pseudonym.length > 100) {
+    errors.pseudonym = 'pseudonym is too long';
+  }
+  if (!values.checkpassword) {
+    errors.checkpassword = 'check password is required';
+  } else if (values.checkpassword !== values.password) {
+    errors.checkpassword = 'unvalid check password';
+  }
+  if (!values.iban) {
+    errors.iban = 'iban is required';
+  } else if (!values.iban.match(/^[a-z0-9]+$/i)) {
+    errors.iban = 'Invalid iban';
+  }
+  if (!values.bic) {
+    errors.bic = 'bic is required';
+  } else if (values.bic.length > 8) {
+    errors.bic = 'Invalid bic';
   }
   if (!values.email) {
     errors.email = 'email is required';
   } else if (!/^.+@.+$/i.test(values.email)) {
     errors.email = 'Invalid email address';
   }
-
   if (!values.password) {
     errors.password = 'password is required';
   }
@@ -110,7 +152,7 @@ const validate = (values) => {
 };
 
 SignupForm = reduxForm({
-  form: '',
+  form: 'signup',
   validate,
 })(SignupForm);
 
