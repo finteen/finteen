@@ -14,6 +14,10 @@ const Kid = sequelize.define('kid', {
         type: Sequelize.STRING,
         allowNull: false
     },
+    mobile:{
+        type: Sequelize.STRING,
+        allowNull: false
+    },
     pseudonyme: {
         type: Sequelize.STRING,
         allowNull: false
@@ -22,6 +26,11 @@ const Kid = sequelize.define('kid', {
         type: Sequelize.STRING,
         allowNull: false
     },
+    gender:{
+        type: Sequelize.STRING,
+        allowNull: false
+
+    },
     password: {
         type: Sequelize.STRING,
         allowNull: false
@@ -29,7 +38,12 @@ const Kid = sequelize.define('kid', {
     iban: {
         type: Sequelize.STRING,
         allowNull: false
-    }
+    },
+    bic: {
+        type: Sequelize.STRING,
+        allowNull: false
+
+    },
 }, {freezeTableName: true,
     timestamps: false});
 
