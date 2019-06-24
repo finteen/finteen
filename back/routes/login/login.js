@@ -1,9 +1,11 @@
 const express = require('express');
 const userRouter = express.Router();
-const Kid = require('../../models/kid');
+const kid = require('../../data-layer/models/kid');
 
 userRouter.post('/login', function (req, res) {
-    Kid.findOne({
+    console.log(kid.kid)
+
+    kid.findOne({
         where: {
             email: req.body.email
         }
