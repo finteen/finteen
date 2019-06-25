@@ -19,12 +19,11 @@ userRouter.post('/signupform', function (req, res) {
                     genre: req.body.genre,
                     pseudonyme: req.body.pseudonyme,
                     password: req.body.password,
-                    checkpassword: req.body.checkpassword,
+                    //checkpassword: req.body.checkpassword,
                     iban: req.body.iban,
                     bic: req.body.bic,
 
-        
-        
+
                 }).then(user =>
                     res.sendStatus(200
                         ))
@@ -36,12 +35,12 @@ userRouter.post('/signupform', function (req, res) {
 
 
             }
-        
+
     }).catch(err=>{
         res.send('error: ' + err)
     })
-   
-    })
+
+})
 
 
 
