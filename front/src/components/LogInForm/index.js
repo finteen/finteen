@@ -9,12 +9,12 @@ import InputField from '../InputField/index';
 
 // creation du formulaire:
 let LogInForm = (props) => {
-  const { onSubmit, erreur } = props;
+  const { handleSubmit, erreur } = props;
   return (
     <Container>
       <Row>
         <Col xs={{ size: 8, offset: 2 }}>
-          <Form onSubmit={onSubmit}>
+          <Form onSubmit={handleSubmit}>
             <FormGroup>
               <Alert color="danger" isOpen={erreur}>Login Failed</Alert>
               <Field
@@ -47,16 +47,13 @@ const validate = (values) => {
   const errors = {};
 
   if (!values.email) {
-    /* console.log('email is required'); */
-    errors.email = 'Email is required';
+    errors.email = 'email is required';
   } else if (!/^.+@.+$/i.test(values.email)) {
-    /* console.log('email is invalid'); */
     errors.email = 'Invalid email address';
   }
 
   if (!values.password) {
-    /* console.log('password is required'); */
-    errors.password = 'Password is required';
+    errors.password = 'password is required';
   }
 
   return errors;
