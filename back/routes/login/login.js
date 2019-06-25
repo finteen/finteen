@@ -1,6 +1,6 @@
 const express = require('express');
 const userRouter = express.Router();
-const kid = require('../../data-layer/models/kid');
+const   {kid}  = require('../../data-layer/models');
 
 userRouter.post('/login', function (req, res) {
     console.log(kid.kid)
