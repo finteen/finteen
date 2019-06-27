@@ -25,7 +25,7 @@ module.exports = {
           allowNull: false
       },
       age: {
-          type: Sequelize.STRING,
+          type: Sequelize.DATE,
           allowNull: false
       },
       password: {
