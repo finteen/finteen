@@ -5,7 +5,6 @@ module.exports = {
     
     return queryInterface.bulkInsert('kid', [
       {
-        id:1
         name: 'Laura'
         lastname: 'Bonchard'
         email: 'laurabonchard@gmail.com'
@@ -17,7 +16,6 @@ module.exports = {
         updatedAt: 
       },
       {
-        id:2
         name: 'Ben'
         lastname: 'Jünger Klopp'
         email: 'benjungerklopp@gmail.com'
