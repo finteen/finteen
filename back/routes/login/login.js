@@ -1,3 +1,4 @@
+/*Route pour le login entre la BDD et le loginpage */
 const express = require('express');
 const userRouter = express.Router();
 const Kid = require('../../models/kid');

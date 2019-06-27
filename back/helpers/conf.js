@@ -1,3 +1,4 @@
+/*config de la BDD Sequelize (donné privé dans le dossier .env)*/
 const Sequelize = require ('sequelize');
 
 const sequelize = new Sequelize(

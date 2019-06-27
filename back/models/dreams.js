@@ -1,3 +1,4 @@
+/*table dreams */
 const Sequelize = require('../helpers/conf');
 const sequelize = require('sequelize')
 

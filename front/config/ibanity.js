@@ -1,3 +1,4 @@
+/* lien ibanity (donné privé dans le dossier .env) */
 const Ibanity = require('ibanity');
 
 const ibanity = new Ibanity(
