@@ -46,6 +46,7 @@ let SignupForm = (props) => {
               component={InputField}
               placeholder="Votre mobile"
             />
+            <Label for="bic">Age</Label>
             <Field
               id="age"
               type="date"
