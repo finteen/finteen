@@ -2,6 +2,7 @@ import React from 'react';
 import { withRouter } from 'react-router-dom';
 import SignupForm from '../SignupForm/index';
 
+
 class SignupPage extends React.Component {
   constructor(props) {
     super(props);
