@@ -24,3 +24,5 @@ yarn-error.log*
 
 #back
 .env
+
+/config
