@@ -13,12 +13,12 @@ const items = [
 
 module.exports = {
   up: (queryInterface, Sequelize) => {
-    return queryInterface.bulkInsert('Items', items, {});
+    return queryInterface.bulkInsert('dreams', items, {});
   },
 
   down: (queryInterface, Sequelize) => {
      return queryInterface.bulkDelete(
-      'Items',
+      'dreams',
       {
         id: { [Sequelize.Op.in]: items.map(item => item.id) },
       },
