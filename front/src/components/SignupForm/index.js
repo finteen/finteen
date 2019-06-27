@@ -17,7 +17,6 @@ let SignupForm = (props) => {
           <Form onSubmit={handleSubmit}>
             <Alert color="danger" isOpen={erreur}>Signup failed</Alert>
             <FormGroup>
-              <Label for="name">Prénom</Label>
               <Field
                 id="name"
                 type="text"
@@ -26,7 +25,6 @@ let SignupForm = (props) => {
                 placeholder="Votre prénom"
               />
             </FormGroup>
-            <Label for="lastname">Nom</Label>
             <Field
               id="lastname"
               type="text"
@@ -34,7 +32,6 @@ let SignupForm = (props) => {
               component={InputField}
               placeholder="Votre nom"
             />
-            <Label for="exampleEmail">Email</Label>
             <Field
               id="email"
               type="email"
@@ -42,7 +39,6 @@ let SignupForm = (props) => {
               component={InputField}
               placeholder="Votre e-mail"
             />
-            <Label for="mobile">Mobile</Label>
             <Field
               id="mobile"
               type="text"
@@ -50,7 +46,6 @@ let SignupForm = (props) => {
               component={InputField}
               placeholder="Votre mobile"
             />
-            <Label for="age">Age</Label>
             <Field
               id="age"
               type="date"
@@ -58,7 +53,6 @@ let SignupForm = (props) => {
               component={InputField}
               placeholder="Votre age"
             />
-            <Label for="genre">Genre</Label>
             <Field
               id="gender"
               type="text"
@@ -66,7 +60,6 @@ let SignupForm = (props) => {
               component={InputField}
               placeholder="Votre genre"
             />
-            <Label for="pseudonyme">Pseudonyme</Label>
             <Field
               id="pseudonym"
               type="text"
@@ -74,7 +67,6 @@ let SignupForm = (props) => {
               component={InputField}
               placeholder="Votre pseudo"
             />
-            <Label for="password">Mot de passe</Label>
             <Field
               id="password"
               type="password"
@@ -82,7 +74,6 @@ let SignupForm = (props) => {
               component={InputField}
               placeholder="Votre password"
             />
-            <Label for="checkemail">Vérification email</Label>
             <Field
               id="checkpassword"
               type="password"
@@ -90,7 +81,6 @@ let SignupForm = (props) => {
               component={InputField}
               placeholder="Confirmer votre password"
             />
-            <Label for="iban">Iban</Label>
             <Field
               id="iban"
               type="text"
@@ -98,7 +88,6 @@ let SignupForm = (props) => {
               component={InputField}
               placeholder="Votre iban"
             />
-            <Label for="bic">Bic</Label>
             <Field
               id="bic"
               type="text"
