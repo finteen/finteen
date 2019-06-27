@@ -1,12 +1,13 @@
 'use strict';
 module.exports = (sequelize, DataTypes) => {
-  const dream = sequelize.define('dream', {    dream_price: {
-        type: DataTypes.DECIMAL,
-        allowNull:false
+  const dream = sequelize.define('dream', {    
+    dream_price: {
+      type: DataTypes.DECIMAL,
+      allowNull:false
     },
     money_avaible_for_the_dream: {
-        type: DataTypes.DECIMAL,
-        allowNull:false
+      type: DataTypes.DECIMAL,
+      allowNull:false
     },
     dream_name:{
       type: DataTypes.STRING,
@@ -21,8 +22,8 @@ module.exports = (sequelize, DataTypes) => {
       allowNull: true
     },
     dream_description: {
-          type: Sequelize.STRING,
-          allowNull:false
+      type: Sequelize.STRING,
+      allowNull:false
     },
   }, {freezeTableName: true});
   dream.associate = function(models) {

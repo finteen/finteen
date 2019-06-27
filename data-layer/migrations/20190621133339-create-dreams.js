@@ -9,16 +9,16 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       dream_description: {
-          type: Sequelize.STRING,
-          allowNull:false
+        type: Sequelize.STRING,
+        allowNull:false
       },
       dream_price: {
-          type: Sequelize.STRING,
-          allowNull:false
+        type: Sequelize.STRING,
+        allowNull:false
       },
       money_avaible_for_the_dream: {
-          type: Sequelize.STRING,
-          allowNull:false
+        type: Sequelize.STRING,
+        allowNull:false
       },
       createdAt: {
         allowNull: false,
@@ -29,12 +29,12 @@ module.exports = {
         type: Sequelize.DATE
       },
       dream_name:{
-      type: DataTypes.STRING,
-      allowNull:false
+        type: Sequelize.STRING,
+        allowNull:false
       },
       kid_id:{
-      type: DataTypes.INTEGER,
-      allowNull: true
+        type: Sequelize.INTEGER,
+        allowNull: true
       }
     });
   },
