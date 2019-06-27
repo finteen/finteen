@@ -35,6 +35,10 @@ module.exports = {
       kid_id:{
         type: Sequelize.INTEGER,
         allowNull: true
+      },
+      saving_account_id: {
+        type: Sequelize.INTEGER,
+        allowNull: true
       }
     });
   },
