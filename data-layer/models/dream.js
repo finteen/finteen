@@ -22,7 +22,7 @@ module.exports = (sequelize, DataTypes) => {
       allowNull: true
     },
     dream_description: {
-      type: Sequelize.STRING,
+      type: DataTypes.STRING,
       allowNull:false
     },
   }, {freezeTableName: true, timestamps: false});
