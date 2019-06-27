@@ -13,7 +13,7 @@ let SignupForm = (props) => {
   return (
     <Container>
       <Row>
-        <Col xs={{ size: 6, offset: 2 }}>
+        <Col xs={{ size: 12 }}>
           <Form onSubmit={handleSubmit}>
             <Alert color="danger" isOpen={erreur}>Signup failed</Alert>
             <FormGroup>
@@ -22,6 +22,7 @@ let SignupForm = (props) => {
                 type="text"
                 name="name"
                 component={InputField}
+                className="form-control"
                 placeholder="Votre prénom"
               />
             </FormGroup>
@@ -30,6 +31,7 @@ let SignupForm = (props) => {
               type="text"
               name="lastname"
               component={InputField}
+              className="form-control"
               placeholder="Votre nom"
             />
             <Field
@@ -37,6 +39,7 @@ let SignupForm = (props) => {
               type="email"
               name="email"
               component={InputField}
+              className="form-control"
               placeholder="Votre e-mail"
             />
             <Field
@@ -44,6 +47,7 @@ let SignupForm = (props) => {
               type="text"
               name="mobile"
               component={InputField}
+              className="form-control"
               placeholder="Votre mobile"
             />
             <Label for="bic">Age</Label>
@@ -52,6 +56,7 @@ let SignupForm = (props) => {
               type="date"
               name="age"
               component={InputField}
+              className="form-control"
               placeholder="Votre age"
             />
             <Field
@@ -59,6 +64,7 @@ let SignupForm = (props) => {
               type="text"
               name="gender"
               component={InputField}
+              className="form-control"
               placeholder="Votre genre"
             />
             <Field
@@ -66,6 +72,7 @@ let SignupForm = (props) => {
               type="text"
               name="pseudonym"
               component={InputField}
+              className="form-control"
               placeholder="Votre pseudo"
             />
             <Field
@@ -73,6 +80,7 @@ let SignupForm = (props) => {
               type="password"
               name="password"
               component={InputField}
+              className="form-control"
               placeholder="Votre password"
             />
             <Field
@@ -80,6 +88,7 @@ let SignupForm = (props) => {
               type="password"
               name="checkpassword"
               component={InputField}
+              className="form-control"
               placeholder="Confirmer votre password"
             />
             <Field
@@ -87,6 +96,7 @@ let SignupForm = (props) => {
               type="text"
               name="iban"
               component={InputField}
+              className="form-control"
               placeholder="Votre iban"
             />
             <Field
@@ -94,6 +104,7 @@ let SignupForm = (props) => {
               type="text"
               name="bic"
               component={InputField}
+              className="form-control"
               placeholder="Votre bic"
             />
             <Button>Sign Up</Button>
