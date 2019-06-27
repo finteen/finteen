@@ -16,7 +16,7 @@ const items = [
     lastname: 'Jünger Klopp'
     email: 'benjungerklopp@gmail.com'
     pseudonyme: 'benliverpool2019'
-    age:2006-06-12 
+    age:'2006-06-12 '
     password: 'bensalah04'
     iban: 'BE03310129669484'
   }
