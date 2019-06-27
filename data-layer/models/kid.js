@@ -30,7 +30,8 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.STRING,
       allowNull: false
     }
-  }, {
+    }, 
+    {
     freezeTableName: true,
     timestamps: false});
   kid.associate = function(models) {
