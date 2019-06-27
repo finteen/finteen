@@ -27,6 +27,14 @@ module.exports = {
       updatedAt: {
         allowNull: false,
         type: Sequelize.DATE
+      },
+      dream_name:{
+      type: DataTypes.STRING,
+      allowNull:false
+      },
+      kid_id:{
+      type: DataTypes.INTEGER,
+      allowNull: true
       }
     });
   },

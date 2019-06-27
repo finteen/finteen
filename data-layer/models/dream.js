@@ -1,11 +1,6 @@
 'use strict';
 module.exports = (sequelize, DataTypes) => {
-  const dream = sequelize.define('dream', {
-    dream_description: {
-    type: DataTypes.STRING,
-    allowNull:false
-    },
-    dream_price: {
+  const dream = sequelize.define('dream', {    dream_price: {
         type: DataTypes.DECIMAL,
         allowNull:false
     },
@@ -24,7 +19,11 @@ module.exports = (sequelize, DataTypes) => {
     kid_id:{
       type: DataTypes.INTEGER,
       allowNull: true
-    }
+    },
+    dream_description: {
+          type: Sequelize.STRING,
+          allowNull:false
+    },
   }, {freezeTableName: true});
   dream.associate = function(models) {
     // associations can be defined here
