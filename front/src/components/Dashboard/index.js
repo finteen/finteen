@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 import './index.css';
 
 const Dashboard = () => (
-  <div>
+  <React.Fragment>
     <div className="container-my-budget">
       <NavLink to="/mybudget" className="my-budget">My Budget</NavLink>
     </div>
@@ -16,7 +16,7 @@ const Dashboard = () => (
     <div className="container-my-profils">
       <NavLink to="/myprofils" className="my-profils">My Profils</NavLink>
     </div>
-  </div>
+  </React.Fragment>
 );
 
 
