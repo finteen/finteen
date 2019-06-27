@@ -13,7 +13,7 @@ const items = [
 
 module.exports = {
   up: (queryInterface, Sequelize) => {
-    return queryInterface.bulkInsert('dream', items, {});
+    return queryInterface.bulkInsert('dream', items, {freezeTableName: true});
   },
 
   down: (queryInterface, Sequelize) => {
@@ -22,7 +22,7 @@ module.exports = {
       {
         id: { [Sequelize.Op.in]: items.map(item => item.id) },
       },
-      {}
+      {freezeTableName: true}
     );
   }
 };
