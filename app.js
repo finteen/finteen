@@ -6,7 +6,7 @@ const app =  express();
 const login = require('./routes/login/login')
 
 const bodyParser = require('body-parser');
-const PATH_TO_WEB_APP_BUILD = 'web-app/build';
+const PATH_TO_WEB_APP_BUILD = 'app/build';
 app.use(express.static(path.join(__dirname, PATH_TO_WEB_APP_BUILD)));
 app.use(bodyParser.urlencoded({extend: false}));
 app.use(bodyParser.json());
