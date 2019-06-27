@@ -1,0 +1,28 @@
+.home_page {
+    border-style: solid;
+}
+.titre {
+    margin-top: 30%;
+    text-align: center;
+
+}
+
+
+.logo_silouhette,
+.logo_finteen {
+    display: block;
+    margin:0 auto;
+}
+
+.logo_finteen {
+    width: 180px;
+}
+
+.logo_silouhette {
+    max-width: 100%;
+    margin-bottom: 10%;
+}
+
+.container{
+    max-width: 560px;
+}
