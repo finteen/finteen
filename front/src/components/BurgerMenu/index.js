@@ -1,64 +1,62 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './index.css';
 import {
-  MDBNavbar, MDBNavbarBrand, NavbarNav, MDBNavItem, MDBNavLink, MDBNavbarToggler,
-  MDBCollapse, MDBContainer,
-}
-  from 'mdbreact';
+  Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink,
+} from 'reactstrap';
 
-class BurgerMenu extends Component {
-state = {
-  collapseID: '',
-}
+class BurgerMenu extends React.Component {
+  constructor(props) {
+    super(props);
 
-toggleCollapse = collapseID => () => {
-  this.setState(prevState => ({ collapseID: (prevState.collapseID !== collapseID ? collapseID : '') }));
-}
+    this.toggleNavbar = this.toggleNavbar.bind(this);
+    this.state = {
+      collapsed: false,
+    };
+  }
 
+  toggleNavbar = () => {
+    const { collapsed } = this.state;
+    this.setState({
+      collapsed: !collapsed,
+    });
+  }
 
-render() {
-  const newcollapse = this.state;
-  return (
-    <MDBContainer>
-      <MDBNavbar className="navbar" style={{ marginTop: '20px' }} light>
-        <MDBContainer>
-          <MDBNavbarBrand>
-            Finteen
-          </MDBNavbarBrand>
-          <MDBNavbarToggler onClick={this.toggleCollapse('navbarCollapse1')} />
-          <MDBCollapse id="navbarCollapse1" isOpen={newcollapse.collapseID} navbar>
-            <NavbarNav left>
-              <MDBNavItem active>
-                <MDBNavLink to="#!">Dashboard</MDBNavLink>
-              </MDBNavItem>
-              <MDBNavItem>
-                <MDBNavLink to="#!">My budget</MDBNavLink>
-              </MDBNavItem>
-              <MDBNavItem>
-                <MDBNavLink to="#!">My dreams</MDBNavLink>
-              </MDBNavItem>
-              <MDBNavItem>
-                <MDBNavLink to="#!">My rewards</MDBNavLink>
-              </MDBNavItem>
-              <MDBNavItem>
-                <MDBNavLink to="#!">Profile</MDBNavLink>
-              </MDBNavItem>
-              <MDBNavItem>
-                <MDBNavLink to="#!">Settings</MDBNavLink>
-              </MDBNavItem>
-              <MDBNavItem>
-                <MDBNavLink to="/loginform/">Logout</MDBNavLink>
-              </MDBNavItem>
-              <MDBNavItem>
-                <MDBNavLink to="#!">Contact us</MDBNavLink>
-              </MDBNavItem>
-            </NavbarNav>
-          </MDBCollapse>
-        </MDBContainer>
-      </MDBNavbar>
-    </MDBContainer>
-  );
-}
+  render() {
+    const { collapsed } = this.state;
+    return (
+      <div>
+        <Navbar color="faded" light className="navbarcolor">
+          <NavbarBrand href="/dashboard" className="mr-auto">Dashboard</NavbarBrand>
+          <NavbarToggler onClick={this.toggleNavbar} className="mr-2" />
+          <Collapse isOpen={collapsed} navbar>
+            <Nav navbar>
+              <NavItem>
+                <NavLink href="/mybudget/">My budget</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="/mydreams">My Dreams</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="myrewards">My rewards</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="/profile">Profiles</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="/settings">Settings</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="/loginform">Logout</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="/contactus">Contact</NavLink>
+              </NavItem>
+            </Nav>
+          </Collapse>
+        </Navbar>
+      </div>
+    );
+  }
 }
 
 export default BurgerMenu;

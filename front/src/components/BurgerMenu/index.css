@@ -1,3 +1,7 @@
-.navbar {
+.navbarcolor {
     background-color: rgb(207, 207, 226);
 }
+.navbar-light .navbar-toggler-icon {
+    background-image: url('../../Assets/images/burgerlogo.png') !important;
+}
+

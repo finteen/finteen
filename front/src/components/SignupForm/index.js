@@ -82,7 +82,7 @@ let SignupForm = (props) => {
               component={InputField}
               placeholder="Votre password"
             />
-            <Label for="checkemail">Vérification email</Label>
+            <Label for="checkemail">Vérification du mot de passe</Label>
             <Field
               id="checkpassword"
               type="password"
