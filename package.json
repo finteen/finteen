@@ -1,9 +1,10 @@
 {
-  "name": "routes",
+  "name": "finteen",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "sequelize db:migrate && sequelize db:seed:all && cd app && npm install && npm run build",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon app.js"
   },
@@ -34,6 +35,7 @@
     "express": "^4.17.1",
     "mysql2": "^1.6.5",
     "nodemon": "^1.19.1",
+    "pg": "^7.11.0",
     "sequelize": "^5.8.9",
     "sequelize-auto-migrations": "^1.0.3",
     "sequelize-cli": "^5.5.0"

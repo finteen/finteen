@@ -1,3 +1,4 @@
+
 require('dotenv').config();
 const path = require('path');
 
@@ -6,4 +7,4 @@ module.exports = {
   'migrations-path': path.resolve('data-layer', 'migrations'),
   'models-path': path.resolve('data-layer', 'models'),
   'seeders-path': path.resolve('data-layer', 'seeders'),
-};  
+}; 
