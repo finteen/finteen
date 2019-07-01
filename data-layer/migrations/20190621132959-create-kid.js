@@ -21,7 +21,7 @@ module.exports = {
           allowNull: false
       },
       mobile: {
-        type: DataTypes.INTEGER,
+        type: Sequelize.INTEGER,
         allowNull: false
       },
       pseudonyme: {
@@ -33,7 +33,7 @@ module.exports = {
           allowNull: false
       },
       gender: {
-        type: DataTypes.STRING,
+        type: Sequelize.STRING,
         allowNull: true
       },
       password: {
@@ -45,7 +45,7 @@ module.exports = {
           allowNull: false
       },
       bic: {
-        type: DataTypes.STRING,
+        type: Sequelize.STRING,
         allowNull: false
       }
     });
