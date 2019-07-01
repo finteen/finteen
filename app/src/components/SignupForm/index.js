@@ -68,9 +68,9 @@ let SignupForm = (props) => {
               placeholder="Votre genre"
             />
             <Field
-              id="pseudonym"
+              id="pseudonyme"
               type="text"
-              name="pseudonym"
+              name="pseudonyme"
               component={InputField}
               className="form-control"
               placeholder="Votre pseudo"
@@ -166,7 +166,7 @@ const validate = (values) => {
 };
 
 SignupForm = reduxForm({
-  form: 'signup',
+  form: 'SignupForm',
   validate,
 })(SignupForm);
 

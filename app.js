@@ -12,6 +12,7 @@ app.use(bodyParser.urlencoded({extend: false}));
 app.use(bodyParser.json());
 
 app.use('/auth', login )
+
 app.get('*', (req, res) => {
    res.sendFile(path.join(__dirname, PATH_TO_WEB_APP_BUILD, 'index.html'));
  });
