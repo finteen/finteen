@@ -20,6 +20,10 @@ module.exports = {
           type: Sequelize.STRING,
           allowNull: false
       },
+      mobile: {
+        type: DataTypes.INTEGER,
+        allowNull: false
+      },
       pseudonyme: {
           type: Sequelize.STRING,
           allowNull: false
@@ -27,6 +31,10 @@ module.exports = {
       age: {
           type: Sequelize.DATE,
           allowNull: false
+      },
+      gender: {
+        type: DataTypes.STRING,
+        allowNull: true
       },
       password: {
           type: Sequelize.STRING,
@@ -36,6 +44,10 @@ module.exports = {
           type: Sequelize.STRING,
           allowNull: false
       },
+      bic: {
+        type: DataTypes.STRING,
+        allowNull: false
+      }
     });
   },
   down: (queryInterface, Sequelize) => {

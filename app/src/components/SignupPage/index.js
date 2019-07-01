@@ -1,6 +1,6 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
-import SignupForm from '../SignupForm/index';
+import SignupForm from '../SignupForm';
 
 
 class SignupPage extends React.Component {
@@ -11,7 +11,7 @@ class SignupPage extends React.Component {
     };
   }
 
-    handleSubmit = (values) => {
+    handleLogin = (values) => {
       const config = {
         method: 'POST',
         headers: {
@@ -19,7 +19,7 @@ class SignupPage extends React.Component {
         },
         body: JSON.stringify(values),
       };
-      const url = '/auth/signup';
+      const url = '/auth/signupform';
       const { history } = this.props;
       fetch(url, config)
         .then((res) => {
@@ -35,7 +35,7 @@ class SignupPage extends React.Component {
       const { err } = this.state;
       return (
         <div>
-          <SignupForm onSubmit={this.handleSubmit} erreur={err} />
+          <SignupForm onSubmit={this.handleLogin} erreur={err} />
         </div>
       );
     }

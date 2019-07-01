@@ -14,6 +14,10 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.STRING,
       allowNull: false
     },
+    mobile: {
+      type: DataTypes.INTEGER,
+      allowNull: false
+    },
     pseudonyme: {
       type: DataTypes.STRING,
       allowNull: false
@@ -22,11 +26,19 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.DATE,
       allowNull: false
     },
+    gender: {
+      type: DataTypes.STRING,
+      allowNull: true
+    },
     password: {
       type: DataTypes.STRING,
       allowNull: false
     },
     iban: {
+      type: DataTypes.STRING,
+      allowNull: false
+    },
+    bic: {
       type: DataTypes.STRING,
       allowNull: false
     }
