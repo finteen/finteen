@@ -46,7 +46,7 @@ class BurgerMenu extends React.Component {
                 <NavLink href="/settings">Settings</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/loginform">Logout</NavLink>
+                <NavLink href="/">Logout</NavLink>
               </NavItem>
               <NavItem>
                 <NavLink href="/contactus">Contact</NavLink>
