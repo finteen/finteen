@@ -42,11 +42,12 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.STRING,
       allowNull: false
     }
-    }, 
+  },
     {
-    freezeTableName: true,
-    timestamps: false});
-  kid.associate = function(models) {
+      freezeTableName: true,
+      timestamps: false
+    });
+  kid.associate = function (models) {
     // associations can be defined here
   };
   return kid;
