@@ -1,15 +1,33 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
 import './index.css';
+import {
+  NavLink, Row, Container, Col,
+}
+  from 'reactstrap';
+import BurgerMenu from '../BurgerMenu/index';
+
 
 const Dashboard = () => (
-  <React.Fragment>
-    <NavLink to="/mybudget" className="my-budget">My Budget</NavLink>
-    <NavLink to="/mydreams" className="my-dreams">My Dreams</NavLink>
-    <NavLink to="/myrewards" className="my-rewards">My Rewards</NavLink>
-    <NavLink to="/myprofils" className="my-profils">My Profils</NavLink>
-  </React.Fragment>
-);
 
+  <div>
+    <BurgerMenu />
+    <Container>
+      <Row>
+        <Col xs="6">
+          <NavLink href="/mybudget" className="my-budget" />
+        </Col>
+        <Col xs="6">
+          <NavLink href="/mydreams" className="my-dreams" />
+        </Col>
+        <Col xs="6">
+          <NavLink href="/myrewards" className="my-rewards" />
+        </Col>
+        <Col xs="6">
+          <NavLink href="/myprofile" className="my-profile" />
+        </Col>
+      </Row>
+    </Container>
+  </div>
+);
 
 export default Dashboard;

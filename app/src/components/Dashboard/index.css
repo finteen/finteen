@@ -1,0 +1,29 @@
+.container {
+    margin-top: 40%;
+    margin-left: 30px !important;
+ }
+ .my-budget {
+    background-image: url('../../Assets/images/logomybudget.jpg');
+    height : 200px;
+    width : 100%;
+    background-repeat: no-repeat;
+ 
+ }
+ .my-dreams {
+    background-image: url('../../Assets/images/logomydreams.jpg');
+    height: 200px;
+    width: 100%;
+    background-repeat: no-repeat;
+ }
+ .my-rewards {
+    background-image: url('../../Assets/images/logomyrewards.jpg');
+    height: 200px;
+    width: 100%;
+    background-repeat: no-repeat;
+ }
+ .my-profile {
+    background-image: url('../../Assets/images/logomyprofils.jpg');
+    height: 200px;
+    width: 100%;
+    background-repeat: no-repeat;
+ }
