@@ -60,7 +60,7 @@ const validate = (values) => {
 };
 
 LogInForm = reduxForm({
-  form: 'signIn',
+  form: 'LogInForm',
   validate,
 })(LogInForm);
 

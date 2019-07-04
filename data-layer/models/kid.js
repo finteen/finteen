@@ -14,6 +14,10 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.STRING,
       allowNull: false
     },
+    mobile: {
+      type: DataTypes.INTEGER,
+      allowNull: false
+    },
     pseudonyme: {
       type: DataTypes.STRING,
       allowNull: false
@@ -22,6 +26,10 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.DATE,
       allowNull: false
     },
+    gender: {
+      type: DataTypes.STRING,
+      allowNull: true
+    },
     password: {
       type: DataTypes.STRING,
       allowNull: false
@@ -29,12 +37,17 @@ module.exports = (sequelize, DataTypes) => {
     iban: {
       type: DataTypes.STRING,
       allowNull: false
+    },
+    bic: {
+      type: DataTypes.STRING,
+      allowNull: false
     }
-    }, 
+  },
     {
-    freezeTableName: true,
-    timestamps: false});
-  kid.associate = function(models) {
+      freezeTableName: true,
+      timestamps: false
+    });
+  kid.associate = function (models) {
     // associations can be defined here
   };
   return kid;

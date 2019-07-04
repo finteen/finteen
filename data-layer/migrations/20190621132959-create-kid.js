@@ -13,29 +13,41 @@ module.exports = {
         allowNull: false
       },
       lastname: {
-          type: Sequelize.STRING,
-          allowNull: false
+        type: Sequelize.STRING,
+        allowNull: false
       },
       email: {
-          type: Sequelize.STRING,
-          allowNull: false
+        type: Sequelize.STRING,
+        allowNull: false
+      },
+      mobile: {
+        type: Sequelize.INTEGER,
+        allowNull: false
       },
       pseudonyme: {
-          type: Sequelize.STRING,
-          allowNull: false
+        type: Sequelize.STRING,
+        allowNull: false
       },
       age: {
-          type: Sequelize.DATE,
-          allowNull: false
+        type: Sequelize.DATE,
+        allowNull: false
+      },
+      gender: {
+        type: Sequelize.STRING,
+        allowNull: true
       },
       password: {
-          type: Sequelize.STRING,
-          allowNull: false
+        type: Sequelize.STRING,
+        allowNull: false
       },
       iban: {
-          type: Sequelize.STRING,
-          allowNull: false
+        type: Sequelize.STRING,
+        allowNull: false
       },
+      bic: {
+        type: Sequelize.STRING,
+        allowNull: false
+      }
     });
   },
   down: (queryInterface, Sequelize) => {
