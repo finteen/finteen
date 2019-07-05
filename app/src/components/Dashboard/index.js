@@ -4,10 +4,12 @@ import {
   NavLink, Row, Container, Col,
 }
   from 'reactstrap';
-import LogoBudget from '../../Assets/images/logomybudget.jpg';
+import LogoBudget from '../../Assets/images/logomybudget.png';
 import LogoDreams from '../../Assets/images/logomydreams.jpg';
 import LogoRewards from '../../Assets/images/logomyrewards.jpg';
 import LogoProfile from '../../Assets/images/logomyprofils.jpg';
+import LogoQuizz from '../../Assets/images/logoquizz.png';
+import LogoContact from '../../Assets/images/logocontact.png';
 import BurgerMenu from '../BurgerMenu/index';
 
 
@@ -35,6 +37,16 @@ const Mydreams = () => (
         <Col xs="6">
           <NavLink href="/myprofile" className="my-profile">
             <img src={LogoProfile} alt="myprofils" />
+          </NavLink>
+        </Col>
+        <Col xs="6">
+          <NavLink href="/quizz" className="quizz">
+            <img src={LogoQuizz} alt="quizz" />
+          </NavLink>
+        </Col>
+        <Col xs="6">
+          <NavLink href="/contactus" className="contact">
+            <img src={LogoContact} alt="contact" />
           </NavLink>
         </Col>
       </Row>
