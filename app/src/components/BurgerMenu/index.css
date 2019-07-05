@@ -1,7 +1,14 @@
-.navbarcolor {
-    background-color: rgb(207, 207, 226);
-}
 .navbar-light .navbar-toggler-icon {
     background-image: url('../../Assets/images/burgerlogo.png') !important;
 }
 
+.logofinteen {
+    width: 30%;
+    height: 30%;
+    float: right;
+}
+.navbar>.container, .navbar>.container-fluid {
+    display: flex;
+    flex-wrap: nowrap !important;
+    margin-top: 0%;
+}
