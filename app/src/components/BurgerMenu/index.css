@@ -4,7 +4,7 @@
 .navbar>.container, .navbar>.container-fluid {
     display: flex;
     flex-wrap: nowrap !important;
-    margin-top: 0%;
+    margin-top: 0;
 }
 .logofinteen {
     width: 100%;

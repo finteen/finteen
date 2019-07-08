@@ -22,32 +22,32 @@ const Mydreams = () => (
       <Row>
         <Col xs="6">
           <NavLink to="/mybudget" className="my-budget" tag={RRNavLink}>
-            <img src={LogoBudget} alt="logomybudget" className="budget" />
+            <img src={LogoBudget} alt="logomybudget" className="logos-dashboard" />
           </NavLink>
         </Col>
         <Col xs="6">
           <NavLink to="/mydreams" className="my-dreams" tag={RRNavLink}>
-            <img src={LogoDreams} alt="logomydreams" className="dreams" />
+            <img src={LogoDreams} alt="logomydreams" className="logos-dashboard" />
           </NavLink>
         </Col>
         <Col xs="6">
           <NavLink to="/myrewards" className="my-rewards" tag={RRNavLink}>
-            <img src={LogoRewards} alt="logomyrewards" className="rewards" />
+            <img src={LogoRewards} alt="logomyrewards" className="logos-dashboard" />
           </NavLink>
         </Col>
         <Col xs="6">
           <NavLink to="/quizz" className="quizz" tag={RRNavLink}>
-            <img src={LogoQuizz} alt="quizz" className="quizz" />
+            <img src={LogoQuizz} alt="quizz" className="logos-dashboard" />
           </NavLink>
         </Col>
         <Col xs="6">
           <NavLink to="/myprofile" className="my-profile" tag={RRNavLink}>
-            <img src={LogoProfile} alt="myprofile" className="profile" />
+            <img src={LogoProfile} alt="myprofile" className="logos-dashboard" />
           </NavLink>
         </Col>
         <Col xs="6">
           <NavLink to="/contactus" tag={RRNavLink}>
-            <img src={LogoContact} alt="contact" className="contact" />
+            <img src={LogoContact} alt="contact" className="logos-dashboard" />
           </NavLink>
         </Col>
       </Row>
