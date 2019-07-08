@@ -1,8 +1,11 @@
 import React from 'react';
 import './index.css';
+import { NavLink as RRNavLink } from 'react-router-dom';
 import {
   Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink,
 } from 'reactstrap';
+import LogoFinteen from '../../Assets/images/logofinteen.png';
+
 
 class BurgerMenu extends React.Component {
   constructor(props) {
@@ -25,31 +28,38 @@ class BurgerMenu extends React.Component {
     const { collapsed } = this.state;
     return (
       <div>
-        <Navbar color="faded" light className="navbarcolor">
-          <NavbarBrand href="/dashboard" className="mr-auto">Dashboard</NavbarBrand>
-          <NavbarToggler onClick={this.toggleNavbar} className="mr-2" />
+        <Navbar color="faded" light className="navbar">
+          <div className="container">
+            <NavbarToggler onClick={this.toggleNavbar} className="mr-2" />
+            <NavbarBrand to="/dashboard" className="logofinteen" tag={RRNavLink}>
+              <img src={LogoFinteen} alt="logofinteen" className="logofinteen" />
+            </NavbarBrand>
+          </div>
           <Collapse isOpen={collapsed} navbar>
             <Nav navbar>
               <NavItem>
-                <NavLink href="/mybudget/">My budget</NavLink>
+                <NavLink to="/mybudget/" tag={RRNavLink}>My budget</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/mydreams">My Dreams</NavLink>
+                <NavLink to="/mydreams" tag={RRNavLink}>My Dreams</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="myrewards">My rewards</NavLink>
+                <NavLink to="/myrewards" tag={RRNavLink}>My rewards</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/profile">Profiles</NavLink>
+                <NavLink to="/quizz" tag={RRNavLink}>Take a quizz</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/settings">Settings</NavLink>
+                <NavLink to="/myprofile" tag={RRNavLink}>Profile</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/">Logout</NavLink>
+                <NavLink to="/contactus" tag={RRNavLink}>Contact</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/contactus">Contact</NavLink>
+                <NavLink to="/settings" tag={RRNavLink}>Settings</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink to="/" tag={RRNavLink}>Logout</NavLink>
               </NavItem>
             </Nav>
           </Collapse>

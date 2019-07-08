@@ -3,12 +3,12 @@ import './index.css';
 import BurgerMenu from '../BurgerMenu/index';
 
 
-const MyDreams = () => (
+const MyrewardsPage = () => (
 
   <div>
     <BurgerMenu />
-    <h1>My Dreams</h1>
+    <h1>My Rewards</h1>
   </div>
 );
 
-export default MyDreams;
+export default MyrewardsPage;
