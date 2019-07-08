@@ -1,2 +1,7 @@
-
-
+.container {
+    margin-top: 100px;
+ }
+ .logos-dashboard {
+    width: 100%;
+    height: auto;
+ }
