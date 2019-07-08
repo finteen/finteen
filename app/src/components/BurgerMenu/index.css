@@ -1,14 +1,14 @@
 .navbar-light .navbar-toggler-icon {
     background-image: url('../../Assets/images/burgerlogo.png') !important;
 }
-
-.logofinteen {
-    width: 30%;
-    height: 30%;
-    float: right;
-}
 .navbar>.container, .navbar>.container-fluid {
     display: flex;
     flex-wrap: nowrap !important;
     margin-top: 0%;
+}
+.logofinteen {
+    width: 100%;
+    height: auto;
+    max-width: 120px;
+    margin-left: auto;
 }

@@ -1,5 +1,6 @@
 import React from 'react';
 import './index.css';
+import { NavLink as RRNavLink } from 'react-router-dom';
 import {
   NavLink, Row, Container, Col,
 }
@@ -20,32 +21,32 @@ const Mydreams = () => (
     <Container>
       <Row>
         <Col xs="6">
-          <NavLink href="/mybudget" className="my-budget">
+          <NavLink to="/mybudget" className="my-budget" tag={RRNavLink}>
             <img src={LogoBudget} alt="logomybudget" className="budget" />
           </NavLink>
         </Col>
         <Col xs="6">
-          <NavLink href="/mydreams" className="my-dreams">
+          <NavLink to="/mydreams" className="my-dreams" tag={RRNavLink}>
             <img src={LogoDreams} alt="logomydreams" className="dreams" />
           </NavLink>
         </Col>
         <Col xs="6">
-          <NavLink href="/myrewards" className="my-rewards">
+          <NavLink to="/myrewards" className="my-rewards" tag={RRNavLink}>
             <img src={LogoRewards} alt="logomyrewards" className="rewards" />
           </NavLink>
         </Col>
         <Col xs="6">
-          <NavLink href="/quizz" className="quizz">
+          <NavLink to="/quizz" className="quizz" tag={RRNavLink}>
             <img src={LogoQuizz} alt="quizz" className="quizz" />
           </NavLink>
         </Col>
         <Col xs="6">
-          <NavLink href="/myprofile" className="my-profile">
+          <NavLink to="/myprofile" className="my-profile" tag={RRNavLink}>
             <img src={LogoProfile} alt="myprofile" className="profile" />
           </NavLink>
         </Col>
         <Col xs="6">
-          <NavLink href="/contactus">
+          <NavLink to="/contactus" tag={RRNavLink}>
             <img src={LogoContact} alt="contact" className="contact" />
           </NavLink>
         </Col>

@@ -1,27 +1,27 @@
 .container {
-    margin-top: 20%;
+    margin-top: 100px;
  }
  .budget {
-    width: 90%;
-	height: 90%;
+    width: 100%;
+    height: auto;
  }
  .dreams {
-    width: 90%;
-	height: 90%;
+    width: 100%;
+    height: auto;
  }
  .rewards {
-    width: 90%;
-	height: 90%;
+    width: 100%;
+    height: auto;
  }
  .quizz {
-    width: 97%;
-	height: 97%;
+    width: 100%;
+    height: auto;
  }
  .contact {
-    width: 90%;
-	height: 90%;
+    width: 100%;
+    height: auto;
  }
  .profile {
-    width: 90%;
-	height: 90%;
+    width: 100%;
+    height: auto;
  }
