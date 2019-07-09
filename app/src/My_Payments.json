@@ -1,13 +1,4 @@
-{
-    "type": "FeatureCollection",
-    "name": "My Payments",
-    "crs": {
-        "type": "name",
-        "properties": {
-            "name": "urn:ogc:def:crs:EPSG::3857"
-        }
-    },
-    "features": [
+ [
   
         {
             "type": "Feature",
@@ -90,7 +81,7 @@
                 "Field1": "2019-006",
                 "date d'execution": "3-04-2019",
                 "date valueur": "3-04-2019",
-                "montant": "5 EUR",
+                "montant": "-5 EUR",
                 "carte": "BE010292837465578",
                 "lieu": "RITUALS CO",
                 "argent mois": "3-04-2019",
@@ -105,7 +96,7 @@
                 "Field1": "2019-007",
                 "date d'execution": "3-04-2019",
                 "date valueur": "3-04-2019",
-                "montant": "32 EUR",
+                "montant": "-32 EUR",
                 "carte": "BE010292837465578",
                 "lieu": "H&M",
                 "argent mois": "3-04-2019",
@@ -120,7 +111,7 @@
                 "Field1": "2019-008",
                 "date d'execution": "4-04-2019",
                 "date valueur": "4-04-2019",
-                "montant": "32 EUR",
+                "montant": "-32 EUR",
                 "carte": "BE357892837465578",
                 "lieu": "H&M",
                 "argent mois": "4-04-2019",
@@ -135,7 +126,7 @@
                 "Field1": "2019-009",
                 "date d'execution": "4-04-2019",
                 "date valueur": "4-04-2019",
-                "montant": "57 EUR",
+                "montant": "-57 EUR",
                 "carte": "BE357892837465578",
                 "lieu": "CH FLOWERS",
                 "argent mois": "4-04-2019",
@@ -165,7 +156,7 @@
                 "Field1": "2019-011",
                 "date d'execution": "5-04-2019",
                 "date valueur": "5-04-2019",
-                "montant": "5 EUR",
+                "montant": "-5 EUR",
                 "carte": "BE357892837465578",
                 "lieu": "SNCB",
                 "argent mois": "5-04-2019",
@@ -180,7 +171,7 @@
                 "Field1": "2019-012",
                 "date d'execution": "5-04-2019",
                 "date valueur": "5-04-2019",
-                "montant": "12,33 EUR",
+                "montant": "-12,33 EUR",
                 "carte": "BE357892837465578",
                 "lieu": "COLRUYT",
                 "argent mois": "5-04-2019",
@@ -195,7 +186,7 @@
                 "Field1": "2019-013",
                 "date d'execution": "6-04-2019",
                 "date valueur": "6-04-2019",
-                "montant": "12,33 EUR",
+                "montant": "-12,33 EUR",
                 "carte": "BE357892837465578",
                 "lieu": "LIDL",
                 "argent mois": "6-04-2019",
@@ -210,7 +201,7 @@
                 "Field1": "2019-014",
                 "date d'execution": "6-04-2019",
                 "date valueur": "6-04-2019",
-                "montant": "20 EUR",
+                "montant": "-20 EUR",
                 "carte": "BE357892837465578",
                 "lieu": "PAUL",
                 "argent mois": "6-04-2019",
@@ -225,7 +216,7 @@
                 "Field1": "2019-015",
                 "date d'execution": "6-04-2019",
                 "date valueur": "6-04-2019",
-                "montant": "23 EUR",
+                "montant": "-23 EUR",
                 "carte": "BE357892837465578",
                 "lieu": "ZARA",
                 "argent mois": "6-04-2019",
@@ -240,7 +231,7 @@
                 "Field1": "2019-016",
                 "date d'execution": "7-04-2019",
                 "date valueur": "7-04-2019",
-                "montant": "52 EUR",
+                "montant": "-52 EUR",
                 "carte": "BE357892837465578",
                 "lieu": "MATCH",
                 "argent mois": "7-04-2019",
@@ -255,7 +246,7 @@
                 "Field1": "2019-017",
                 "date d'execution": "7-04-2019",
                 "date valueur": "7-04-2019",
-                "montant": "43 EUR",
+                "montant": "-43 EUR",
                 "carte": "BE357892837465578",
                 "lieu": "DECATHLON",
                 "argent mois": "7-04-2019",
@@ -270,7 +261,7 @@
                 "Field1": "2019-018",
                 "date d'execution": "8-04-2019",
                 "date valueur": "8-04-2019",
-                "montant": "33 EUR",
+                "montant": "-33 EUR",
                 "carte": "BE357892837465578",
                 "lieu": "EXKI",
                 "argent mois": "8-04-2019",
@@ -285,7 +276,7 @@
                 "Field1": "2019-019",
                 "date d'execution": "8-04-2019",
                 "date valueur": "8-04-2019",
-                "montant": "6 EUR",
+                "montant": "-6 EUR",
                 "carte": "BE357892837465578",
                 "lieu": "PHARMACIE",
                 "argent mois": "8-04-2019",
@@ -300,7 +291,7 @@
                 "Field1": "2019-020",
                 "date d'execution": "8-04-2019",
                 "date valueur": "8-04-2019",
-                "montant": "21 EUR",
+                "montant": "-21 EUR",
                 "carte": "BE357892837465578",
                 "lieu": "BOZAR",
                 "argent mois": "8-04-2019",
@@ -315,7 +306,7 @@
                 "Field1": "2019-021",
                 "date d'execution": "8-04-2019",
                 "date valueur": "8-04-2019",
-                "montant": "21 EUR",
+                "montant": "-21 EUR",
                 "carte": "BE357892837465578",
                 "lieu": "PIZZA HUT",
                 "argent mois": "8-04-2019",
@@ -324,7 +315,7 @@
             },
             "geometry": null
         }
-    ]}
+    ]
     
         
       
