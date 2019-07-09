@@ -42,7 +42,7 @@ class LoginPage extends React.Component {
         <img className="logo_finteen" src={Logo} alt="logo" />
         <img className="logo_silouhette" src={LogoSil} alt="logosil" />
         <LogInForm onSubmit={this.handleSubmit} erreur={err} />
-        <button type="submit" className="signup"><NavLink to="/signupform/">Sign up ?</NavLink></button>
+        <button type="submit" className="signup"><NavLink to="/signupform/">Ta première connexion</NavLink></button>
       </div>
     );
   }
