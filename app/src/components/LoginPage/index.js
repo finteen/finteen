@@ -1,5 +1,6 @@
 import React from 'react';
-import { withRouter } from 'react-router-dom';
+import { withRouter, NavLink as RRNavLink } from 'react-router-dom';
+import { Button, NavLink } from 'reactstrap';
 import LogInForm from '../LogInForm/index';
 import Logo from '../../Assets/images/logofinteen.png';
 import LogoSil from '../../Assets/images/logosilouhette.png';
@@ -40,6 +41,9 @@ class LoginPage extends React.Component {
         <img className="logo_finteen" src={Logo} alt="logo" />
         <img className="logo_silouhette" src={LogoSil} alt="logosil" />
         <LogInForm onSubmit={this.handleSubmit} erreur={err} />
+        <NavLink to="/signupform" className="signupbutton" tag={RRNavLink}>
+          <Button>Ma première connection</Button>
+        </NavLink>
       </div>
     );
   }
