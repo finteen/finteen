@@ -6,7 +6,7 @@ const items = [
     dream_price: 400,
     money_avaible_for_the_dream: 250,
     saving_account_id: 1,
-    kid_id:1
+    kid_id : 1
   },
 
 ];
