@@ -1,10 +1,11 @@
 import React from 'react';
-import './index.css';
 import { withRouter, NavLink } from 'react-router-dom';
+import {
+  Container, Row, Col, Button,
+} from 'reactstrap';
 import LogInForm from '../LogInForm/index';
 import Logo from '../../Assets/images/logofinteen.png';
 import LogoSil from '../../Assets/images/logosilouhette.png';
-
 
 class LoginPage extends React.Component {
   constructor(props) {
@@ -42,7 +43,13 @@ class LoginPage extends React.Component {
         <img className="logo_finteen" src={Logo} alt="logo" />
         <img className="logo_silouhette" src={LogoSil} alt="logosil" />
         <LogInForm onSubmit={this.handleSubmit} erreur={err} />
-        <button type="submit" className="signup"><NavLink to="/signupform/">Ta première connexion</NavLink></button>
+        <Container>
+          <Row>
+            <Col xs={{ size: 8, offset: 2 }}>
+              <Button size="lg" color="secondary" to="/signupform/" tag={NavLink}>Sign up</Button>
+            </Col>
+          </Row>
+        </Container>
       </div>
     );
   }
