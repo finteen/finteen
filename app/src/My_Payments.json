@@ -4,7 +4,7 @@
             "type": "Feature",
             "properties": {
                 "Field1": "2019-001",
-                "date d'execution": "1-04-2019",
+                "date": "1-04-2019",
                 "date valueur": "1-04-2019",
                 "montant": "50 EUR",
                 "carte": "BE09876543210987",
@@ -19,7 +19,7 @@
             "type": "Feature",
             "properties": {
                 "Field1": "2019-002",
-                "date d'execution": "1-04-2019",
+                "date": "1-04-2019",
                 "date valueur": "1-04-2019",
                 "montant": "100 EUR",
                 "carte": "BE09876543210987",
@@ -34,7 +34,7 @@
             "type": "Feature",
             "properties": {
                 "Field1": "2019-003",
-                "date d'execution": "1-04-2019",
+                "date": "1-04-2019",
                 "date valueur": "1-04-2019",
                 "montant": "-20 EUR",
                 "carte": "BE010292837465102",
@@ -49,7 +49,7 @@
             "type": "Feature",
             "properties": {
                 "Field1": "2019-004",
-                "date d'execution": "2-04-2019",
+                "date": "2-04-2019",
                 "date valueur": "2-04-2019",
                 "montant": "-20 EUR",
                 "carte": "BE010292837465102",
@@ -64,7 +64,7 @@
             "type": "Feature",
             "properties": {
                 "Field1": "2019-005",
-                "date d'execution": "2-04-2019",
+                "date": "2-04-2019",
                 "date valueur": "2-04-2019",
                 "montant": "-4 EUR",
                 "carte": "BE010292837465102",
@@ -79,7 +79,7 @@
             "type": "Feature",
             "properties": {
                 "Field1": "2019-006",
-                "date d'execution": "3-04-2019",
+                "date": "3-04-2019",
                 "date valueur": "3-04-2019",
                 "montant": "-5 EUR",
                 "carte": "BE010292837465578",
@@ -94,7 +94,7 @@
             "type": "Feature",
             "properties": {
                 "Field1": "2019-007",
-                "date d'execution": "3-04-2019",
+                "date": "3-04-2019",
                 "date valueur": "3-04-2019",
                 "montant": "-32 EUR",
                 "carte": "BE010292837465578",
@@ -109,7 +109,7 @@
             "type": "Feature",
             "properties": {
                 "Field1": "2019-008",
-                "date d'execution": "4-04-2019",
+                "date": "4-04-2019",
                 "date valueur": "4-04-2019",
                 "montant": "-32 EUR",
                 "carte": "BE357892837465578",
@@ -124,7 +124,7 @@
             "type": "Feature",
             "properties": {
                 "Field1": "2019-009",
-                "date d'execution": "4-04-2019",
+                "date": "4-04-2019",
                 "date valueur": "4-04-2019",
                 "montant": "-57 EUR",
                 "carte": "BE357892837465578",
@@ -139,7 +139,7 @@
             "type": "Feature",
             "properties": {
                 "Field1": "2019-010",
-                "date d'execution": "5-04-2019",
+                "date": "5-04-2019",
                 "date valueur": "5-04-2019",
                 "montant": "-30 EUR",
                 "carte": "BE357892837465578",
@@ -154,7 +154,7 @@
             "type": "Feature",
             "properties": {
                 "Field1": "2019-011",
-                "date d'execution": "5-04-2019",
+                "date": "5-04-2019",
                 "date valueur": "5-04-2019",
                 "montant": "-5 EUR",
                 "carte": "BE357892837465578",
@@ -169,7 +169,7 @@
             "type": "Feature",
             "properties": {
                 "Field1": "2019-012",
-                "date d'execution": "5-04-2019",
+                "date": "5-04-2019",
                 "date valueur": "5-04-2019",
                 "montant": "-12,33 EUR",
                 "carte": "BE357892837465578",
@@ -184,7 +184,7 @@
             "type": "Feature",
             "properties": {
                 "Field1": "2019-013",
-                "date d'execution": "6-04-2019",
+                "date": "6-04-2019",
                 "date valueur": "6-04-2019",
                 "montant": "-12,33 EUR",
                 "carte": "BE357892837465578",
@@ -199,7 +199,7 @@
             "type": "Feature",
             "properties": {
                 "Field1": "2019-014",
-                "date d'execution": "6-04-2019",
+                "date": "6-04-2019",
                 "date valueur": "6-04-2019",
                 "montant": "-20 EUR",
                 "carte": "BE357892837465578",
@@ -214,7 +214,7 @@
             "type": "Feature",
             "properties": {
                 "Field1": "2019-015",
-                "date d'execution": "6-04-2019",
+                "date": "6-04-2019",
                 "date valueur": "6-04-2019",
                 "montant": "-23 EUR",
                 "carte": "BE357892837465578",
@@ -229,7 +229,7 @@
             "type": "Feature",
             "properties": {
                 "Field1": "2019-016",
-                "date d'execution": "7-04-2019",
+                "date": "7-04-2019",
                 "date valueur": "7-04-2019",
                 "montant": "-52 EUR",
                 "carte": "BE357892837465578",
@@ -244,7 +244,7 @@
             "type": "Feature",
             "properties": {
                 "Field1": "2019-017",
-                "date d'execution": "7-04-2019",
+                "date": "7-04-2019",
                 "date valueur": "7-04-2019",
                 "montant": "-43 EUR",
                 "carte": "BE357892837465578",
@@ -259,7 +259,7 @@
             "type": "Feature",
             "properties": {
                 "Field1": "2019-018",
-                "date d'execution": "8-04-2019",
+                "date": "8-04-2019",
                 "date valueur": "8-04-2019",
                 "montant": "-33 EUR",
                 "carte": "BE357892837465578",
@@ -274,7 +274,7 @@
             "type": "Feature",
             "properties": {
                 "Field1": "2019-019",
-                "date d'execution": "8-04-2019",
+                "date": "8-04-2019",
                 "date valueur": "8-04-2019",
                 "montant": "-6 EUR",
                 "carte": "BE357892837465578",
@@ -289,7 +289,7 @@
             "type": "Feature",
             "properties": {
                 "Field1": "2019-020",
-                "date d'execution": "8-04-2019",
+                "date": "8-04-2019",
                 "date valueur": "8-04-2019",
                 "montant": "-21 EUR",
                 "carte": "BE357892837465578",
@@ -304,7 +304,7 @@
             "type": "Feature",
             "properties": {
                 "Field1": "2019-021",
-                "date d'execution": "8-04-2019",
+                "date": "8-04-2019",
                 "date valueur": "8-04-2019",
                 "montant": "-21 EUR",
                 "carte": "BE357892837465578",
