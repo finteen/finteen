@@ -22,7 +22,7 @@ const items = [
     gender: 'male',
     password: 'bensalah04',
     iban: 'BE03310129669484',
-    bic: 'BBRUBEBB'
+    bic: 'BBRUBEBB',
   }
 ];
 

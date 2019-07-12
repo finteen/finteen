@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "sequelize db:migrate && sequelize db:seed:all && cd app && npm install && npm run build",
-    "update": "sequelize db:migrate && sequelize db:seed:all",
+    "update": "sequelize db:migrate && sequelize db:seed:all",    
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon app.js"
   },
@@ -18,8 +18,11 @@
     "mysql2": "^1.6.5",
     "nodemon": "^1.19.1",
     "pg": "^7.11.0",
-    "sequelize": "^5.8.9",
+    "sequelize": "^5.9.2",
     "sequelize-auto-migrations": "^1.0.3",
     "sequelize-cli": "^5.5.0"
+  },
+  "devDependencies": {
+    "husky": "^3.0.0"
   }
 }
