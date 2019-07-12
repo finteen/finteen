@@ -12,6 +12,7 @@ let SignupForm = (props) => {
   const { handleSubmit, erreur } = props;
   return (
     <Container>
+      <h2>Your first connection</h2>
       <Row>
         <Col xs={{ size: 12 }}>
           <Form onSubmit={handleSubmit}>
@@ -23,7 +24,7 @@ let SignupForm = (props) => {
                 name="name"
                 component={InputField}
                 className="form-control"
-                placeholder="Votre prénom"
+                placeholder="First name"
               />
             </FormGroup>
             <Field
@@ -32,7 +33,7 @@ let SignupForm = (props) => {
               name="lastname"
               component={InputField}
               className="form-control"
-              placeholder="Votre nom"
+              placeholder="Last name"
             />
             <Field
               id="email"
@@ -40,7 +41,7 @@ let SignupForm = (props) => {
               name="email"
               component={InputField}
               className="form-control"
-              placeholder="Votre e-mail"
+              placeholder="E-mail"
             />
             <Field
               id="mobile"
@@ -48,16 +49,16 @@ let SignupForm = (props) => {
               name="mobile"
               component={InputField}
               className="form-control"
-              placeholder="Votre mobile"
+              placeholder="Mobile"
             />
-            <Label for="bic">Age</Label>
+            <Label for="bic">Date of birth</Label>
             <Field
               id="age"
               type="date"
               name="age"
               component={InputField}
               className="form-control"
-              placeholder="Votre age"
+              placeholder="age"
             />
             <Field
               id="gender"
@@ -65,7 +66,7 @@ let SignupForm = (props) => {
               name="gender"
               component={InputField}
               className="form-control"
-              placeholder="Votre genre"
+              placeholder="Gender"
             />
             <Field
               id="pseudonyme"
@@ -73,7 +74,7 @@ let SignupForm = (props) => {
               name="pseudonyme"
               component={InputField}
               className="form-control"
-              placeholder="Votre pseudo"
+              placeholder="Pseudo"
             />
             <Field
               id="password"
@@ -81,7 +82,7 @@ let SignupForm = (props) => {
               name="password"
               component={InputField}
               className="form-control"
-              placeholder="Votre password"
+              placeholder="Password"
             />
             <Field
               id="checkpassword"
@@ -89,7 +90,7 @@ let SignupForm = (props) => {
               name="checkpassword"
               component={InputField}
               className="form-control"
-              placeholder="Confirmer votre password"
+              placeholder="Check password"
             />
             <Field
               id="iban"
@@ -97,7 +98,7 @@ let SignupForm = (props) => {
               name="iban"
               component={InputField}
               className="form-control"
-              placeholder="Votre iban"
+              placeholder="Iban"
             />
             <Field
               id="bic"
@@ -105,7 +106,7 @@ let SignupForm = (props) => {
               name="bic"
               component={InputField}
               className="form-control"
-              placeholder="Votre bic"
+              placeholder="Bic"
             />
             <Button>Sign Up</Button>
           </Form>
