@@ -67,7 +67,6 @@ let SignupForm = (props) => {
               name="gender"
               component={SelectField}
               className="form-control"
-              multiple
             >
               <option>Feminin</option>
               <option>Masculin</option>
