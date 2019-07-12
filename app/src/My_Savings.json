@@ -1,0 +1,169 @@
+{
+    "type": "FeatureCollection",
+    "name": "My Savings",
+    "crs": {
+        "type": "name",
+        "properties": {
+            "name": "urn:ogc:def:crs:EPSG::3857"
+        }
+    },
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "Field1": "Nº de séquence;Date d'exécution;Date valeur;Montant;Devise du compte;CONTREPARTIE DE LA TRANSACTION;Détails;Numéro de compte"
+            },
+            "geometry": null
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nº de séquence": "2019-0011",
+                "Date d'exécution": "12-05-2019",
+                "Date valeur": " 12-05-2019",
+                "Montant": "51 EUR",
+                "Devise du compte": "EPARGNE AUTOMATIQUE",
+                "DU COMPTE": "BE07 2100 7601 0666",
+                "DE MISS MISTER REFERENCE BANQUE": "1905120900307755",
+                "DATE VALEUR": "12-05-2019",
+                "Numéro de compte": "BE09876543210987"
+            },
+            "geometry": null
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nº de séquence": "2019-0009",
+                "Date d'exécution": "10-05-2019",
+                "Date valeur": "10-05-2019",
+                "Montant": "1 EUR",
+                "Devise du compte": "EPARGNE AUTOMATIQUE",
+                "DU COMPTE": "BE07 2100 7601 0666",
+                "DE MISS MISTER REFERENCE BANQUE": "1905100139087828",
+                "DATE VALEUR": "10-05-2019",
+                "Numéro de compte": "BE09876543210987"
+            },
+            "geometry": null
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nº de séquence": "2019-0008",
+                "Date d'exécution": "9-05-2019",
+                "Date valeur": "9-05-2019",
+                "Montant": "89 EUR",
+                "Devise du compte": "EPARGNE AUTOMATIQUE",
+                "DU COMPTE": "BE07 2100 7601 0666",
+                "DE MISS MISTERR REFERENCE BANQUE": "1905090113231451",
+                "DATE VALEUR": "09-05-2019",
+                "Numéro de compte": "BE09876543210987"
+            },
+            "geometry": null
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nº de séquence": "2019-0007",
+                "Date d'exécution": "8-05-2019",
+                "Date valeur": "8-05-2019",
+                "Montant": "5 EUR",
+                "Devise du compte": "EPARGNE AUTOMATIQUE",
+                "DU COMPTE": "BE07 2100 7601 0666",
+                "DE MISS MISTER REFERENCE BANQUE": "1905080108471254",
+                "DATE VALEUR": "08-05-2019",
+                "Numéro de compte": "BE09876543210987"
+            },
+            "geometry": null
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nº de séquence": "2019-0006",
+                "Date d'exécution": "7-05-2019",
+                "Date valeur": "7-05-2019",
+                "Montant": "85 EUR",
+                "Devise du compte": "EPARGNE AUTOMATIQUE",
+                "DU COMPTE": "BE07 2100 7601 0666",
+                "DE MISS MISTER REFERENCE BANQUE": "1905070415191571",
+                "DATE VALEUR": "07-05-2019",
+                "Numéro de compte": "BE09876543210987"
+            },
+            "geometry": null
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nº de séquence": "2019-0005",
+                "Date d'exécution": "4-05-2019",
+                "Date valeur": "4-05-2019",
+                "Montant": "52 EUR",
+                "Devise du compte": "EPARGNE AUTOMATIQUE",
+                "DU COMPTE": "BE07 2100 7601 0666",
+                "DE MISS MISTER  REFERENCE BANQUE": "1905040145264689",
+                "DATE VALEUR": "04-05-2019",
+                "Numéro de compte": "BE09876543210987"
+            },
+            "geometry": null
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nº de séquence": "2019-0004",
+                "Date d'exécution": "3-05-2019",
+                "Date valeur": "3-05-2019",
+                "Montant": "85 EUR",
+                "Devise du compte": "EPARGNE AUTOMATIQUE",
+                "DU COMPTE": "BE07 2100 7601 0666",
+                "DE MISS MISTER REFERENCE BANQUE": "1905030241522327",
+                "DATE VALEUR": "03-05-2019",
+                "Numéro de compte": "BE09876543210987"
+            },
+            "geometry": null
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nº de séquence": "2019-0003",
+                "Date d'exécution": "2-05-2019",
+                "Date valeur": "2-05-2019",
+                "Montant": "3 EUR",
+                "Devise du compte": "EPARGNE AUTOMATIQUE",
+                "DU COMPTE": "BE07 2100 7601 0666",
+                "DE MISS MISTER REFERENCE BANQUE": "1905020150125889",
+                "DATE VALEUR": "02-05-2019",
+                "Numéro de compte": "BE09876543210987"
+            },
+            "geometry": null
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nº de séquence": "2019-0002",
+                "Date d'exécution": "1-05-2019",
+                "Date valeur": "1-05-2019",
+                "Montant": "50 EUR",
+                "Devise du compte": "EPARGNE AUTOMATIQUE",
+                "DU COMPTE": "BE01234567890123",
+                "EPARGNE AUTOMATIQUE REFERENCE BANQUE": "1905010630126749",
+                "DATE VALEUR": "01-05-2019",
+                "Numéro de compte": "BE09876543210987"
+            },
+            "geometry": null
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Nº de séquence": "2019-0001",
+                "Date d'exécution": "1-04-2019",
+                "Date valeur": "1-04-2019",
+                "Montant": "50 EUR",
+                "Devise du compte": "EPARGNE AUTOMATIQUE",
+                "DU COMPTE": "BE01234567890123",
+                "EPARGNE AUTOMATIQUE REFERENCE BANQUE": "1905010630126749",
+                "DATE VALEUR": "01-04-2019",
+                "Numéro de compte": "BE09876543210987"
+            },
+            "geometry": null
+        }
+    ]
+}
