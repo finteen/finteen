@@ -63,4 +63,24 @@ userRouter.post('/signupform', function (req, res) {
     })
 
 })
+userRouter.get ('/profile/:id',function(req,res) {
+    kid.findOne({
+        where:{
+            id:req.params.id
+        }
+    })
+    .then( user =>{
+        if(user){
+            res.json(user)
+        } else{
+            res.send('error')
+        }
+        
+    })
+
+
+.catch(error=>{
+    res.send('error:' + error)
+})
+})
 module.exports = userRouter;
