@@ -48,7 +48,7 @@ module.exports = (sequelize, DataTypes) => {
       timestamps: false
     });
   kid.associate = function (models) {
-    // associations can be defined here
+    kid.hasMany(models.dream);
   };
   return kid;
 };
