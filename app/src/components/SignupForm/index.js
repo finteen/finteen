@@ -1,8 +1,10 @@
 /* eslint-disable import/no-mutable-exports */
 import React from 'react';
+import './index.css';
 import { reduxForm, Field } from 'redux-form';
+import { NavLink as RRNavLink } from 'react-router-dom';
 import {
-  Form, Button, Container, Row, Col, Alert, Label, FormGroup,
+  Form, Button, Container, Row, Col, Alert, Label, FormGroup, NavLink,
 }
   from 'reactstrap';
 import SelectField from '../SelectField/index';
@@ -61,7 +63,6 @@ let SignupForm = (props) => {
               className="form-control"
               placeholder="age"
             />
-            <Label for="gender">Gender</Label>
             <Field
               id="gender"
               type="select"
@@ -113,7 +114,8 @@ let SignupForm = (props) => {
               className="form-control"
               placeholder="Bic"
             />
-            <Button>Sign Up</Button>
+            <Button block>Sign Up</Button>
+            <NavLink to="/" tag={RRNavLink} className="lien">Back</NavLink>
           </Form>
         </Col>
       </Row>
