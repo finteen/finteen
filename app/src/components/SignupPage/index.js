@@ -1,7 +1,6 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
 import SignupForm from '../SignupForm';
-import './index.css';
 
 
 class SignupPage extends React.Component {
@@ -36,7 +35,7 @@ class SignupPage extends React.Component {
       const { err } = this.state;
       return (
         <div>
-          <SignupForm className="red" onSubmit={this.handleLogin} erreur={err} />
+          <SignupForm onSubmit={this.handleLogin} erreur={err} />
         </div>
       );
     }

@@ -1,6 +1,7 @@
 /* eslint-disable */
 
 import React from 'react';
+import'./index.css';
 import { Input } from 'reactstrap';
 
 const SelectField = ({
@@ -22,7 +23,7 @@ const SelectField = ({
     {
       touched
       && error
-      && <div>{error}</div>}
+      && <div className="red">{error}</div>}
   </React.Fragment>
 );
 
