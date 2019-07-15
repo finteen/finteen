@@ -3,6 +3,7 @@ import { withRouter } from 'react-router-dom';
 import LogInForm from '../LogInForm/index';
 import Logo from '../../Assets/images/logofinteen.png';
 import LogoSil from '../../Assets/images/logosilouhette.png';
+import './index.css';
 
 class LoginPage extends React.Component {
   constructor(props) {

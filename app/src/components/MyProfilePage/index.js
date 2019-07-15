@@ -2,7 +2,8 @@ import React from 'react';
 import './index.css';
 import BurgerMenu from '../BurgerMenu/index';
 
-const url = 'http://localhost:3000/auth/profile';
+const url = 'http://localhost:3000/auth/profile/1';
+
 
 class MyProfilePage extends React.Component {
   constructor(props) {
@@ -14,22 +15,28 @@ class MyProfilePage extends React.Component {
 
   componentDidMount() {
     fetch(url)
-      .then(res => res.json());
+      .then(res => res.json())
       .then((res) => {
-        if (res.status === 200) {
-          this.setState({ data: res });
-        }
-      })
+        this.setState({ data: res });
+      });
   }
-
 
   render() {
     const { data } = this.state;
-    console.log(data)
     return (
       <div>
         <BurgerMenu />
-        <h1>{data.name}</h1>
+        <ul>
+          <li>{data.name}</li>
+          <li>{data.lastname}</li>
+          <li>{data.email}</li>
+          <li>{data.mobile}</li>
+          <li>{data.pseudonyme}</li>
+          <li>{data.age}</li>
+          <li>{data.gender}</li>
+          <li>{data.iban}</li>
+          <li>{data.bic}</li>
+        </ul>
       </div>
     );
   }

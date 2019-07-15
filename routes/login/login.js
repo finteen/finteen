@@ -71,6 +71,7 @@ userRouter.get ('/profile/:id',function(req,res) {
     })
     .then( user =>{
         if(user){
+            console.log(user)
             res.json(user)
         } else{
             res.send('error')
