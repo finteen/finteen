@@ -1,6 +1,7 @@
 import React from 'react';
 import { PieChart } from 'react-chartkick';
 import 'chart.js';
+import './index.css';
 
 const Graph = () => {
   const data = {
@@ -23,7 +24,7 @@ const Graph = () => {
     <div>
       <h2>My budget</h2>
       <PieChart data={data} />
-      <h2>My expense</h2>
+      <h2>My expenses</h2>
       <PieChart data={expense} />
     </div>
   );
