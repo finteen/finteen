@@ -5,7 +5,7 @@ import LoginPage from './components/LoginPage/index';
 import Dashboard from './components/Dashboard/index';
 import SignupPage from './components/SignupPage/index';
 import MyrewardsPage from './components/MyrewardsPage';
-import MyBudgetPage from './components/MyBudgetPage';
+import MyBudgetPage from './components/MyBudgetPage/index';
 import MyDreamsPage from './components/MyDreamsPage';
 import QuizzPage from './components/QuizzPage';
 import MyProfilePage from './components/MyProfilePage';

@@ -3,6 +3,7 @@ import './index.css';
 import BurgerMenu from '../BurgerMenu/index';
 import Graph from '../Graph/index';
 
+
 function MyBudgetPage() {
   return (
     <div>
@@ -11,4 +12,5 @@ function MyBudgetPage() {
     </div>
   );
 }
+
 export default MyBudgetPage;

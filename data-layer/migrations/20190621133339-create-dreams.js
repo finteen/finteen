@@ -26,7 +26,11 @@ module.exports = {
       },
       kid_id:{
         type: Sequelize.INTEGER,
-        allowNull: true
+        allowNull: true,
+        references : {
+          model: 'kid',
+          key : 'id'
+        }
       },
       saving_account_id: {
         type: Sequelize.INTEGER,

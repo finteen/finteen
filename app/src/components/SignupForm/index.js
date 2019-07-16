@@ -5,6 +5,7 @@ import {
   Form, Button, Container, Row, Col, Alert, Label, FormGroup,
 }
   from 'reactstrap';
+import SelectField from '../SelectField/index';
 import InputField from '../InputField/index';
 
 
@@ -59,14 +60,18 @@ let SignupForm = (props) => {
               className="form-control"
               placeholder="Votre age"
             />
+            <Label for="gender">Gender</Label>
             <Field
               id="gender"
-              type="text"
+              type="select"
               name="gender"
-              component={InputField}
+              component={SelectField}
               className="form-control"
-              placeholder="Votre genre"
-            />
+            >
+              <option>Feminin</option>
+              <option>Masculin</option>
+              <option>Neutre</option>
+            </Field>
             <Field
               id="pseudonyme"
               type="text"
