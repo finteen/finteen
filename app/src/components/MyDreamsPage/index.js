@@ -13,13 +13,13 @@ const MyDreamsPage = () => (
     <BurgerMenu />
     <h2>My dreams</h2>
     <Container>
-      <Card body className="card">
+      <Card body className="card1">
         <CardTitle>Casque JVC</CardTitle>
         <div>
           <div className="text-center">75%</div>
           <Progress value="75" />
         </div>
-        <Button className="toggle" color="info" id="toggler1" style={{ marginBottom: '1rem' }}>Toggle</Button>
+        <Button className="toggle" color="info" id="toggler1">Toggle</Button>
         <UncontrolledCollapse toggler="#toggler1">
           <br />
           <div>
@@ -42,7 +42,7 @@ const MyDreamsPage = () => (
           <div className="text-center">50%</div>
           <Progress value="50" />
         </div>
-        <Button className="toggle" color="info" id="toggler2" style={{ marginBottom: '1rem' }}>Toggle</Button>
+        <Button className="toggle" color="info" id="toggler2">Toggle</Button>
         <UncontrolledCollapse toggler="#toggler2">
           <div>
             <img width="100" src={Concert} alt="blublu" />
@@ -64,7 +64,7 @@ const MyDreamsPage = () => (
           <div className="text-center">You did it !</div>
           <Progress value="100" />
         </div>
-        <Button className="toggle" color="info" id="toggler3" style={{ marginBottom: '1rem' }}>Toggle</Button>
+        <Button className="toggle" color="info" id="toggler3">Toggle</Button>
         <UncontrolledCollapse toggler="#toggler3">
           <div>
             <Media width="100" object src={Vacances} alt="bloblbo" />
