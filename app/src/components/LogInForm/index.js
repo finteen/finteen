@@ -1,8 +1,10 @@
 /* eslint-disable import/no-mutable-exports */
 import React from 'react';
+import './index.css';
 import { reduxForm, Field } from 'redux-form';
+import { NavLink as RRNavLink } from 'react-router-dom';
 import {
-  Form, Button, FormGroup, Container, Row, Col, Alert,
+  Form, Button, FormGroup, Container, Row, Col, Alert, NavLink,
 } from 'reactstrap';
 import InputField from '../InputField/index';
 
@@ -34,7 +36,8 @@ let LogInForm = (props) => {
               placeholder="Password"
               className="form-control"
             />
-            <Button color="primary" size="lg" active type="submit">Sign in</Button>
+            <Button color="primary" size="lg" active type="submit" block>Sign in</Button>
+            <NavLink to="/signupform" tag={RRNavLink} className="lien">Your first registration</NavLink>
           </Form>
         </Col>
       </Row>

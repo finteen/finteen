@@ -18,7 +18,7 @@ const InputField = ({
     {
       touched
       && error
-      && <div>{error}</div>}
+      && <div className="color-error">{error}</div>}
   </React.Fragment>
 );
 
