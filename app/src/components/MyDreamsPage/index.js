@@ -1,7 +1,11 @@
 /* eslint-disable react/button-has-type */
 import React from 'react';
+import {
+  NavLink, Container, Row, Col, Button,
+} from 'reactstrap';
 import './index.css';
 import BurgerMenu from '../BurgerMenu/index';
+
 
 const MyDreamsPage = () => (
 
@@ -18,7 +22,14 @@ const MyDreamsPage = () => (
       <span className="green">M</span>
       <span className="yellow">S</span>
     </h1>
-
+    <Container>
+      <Row>
+        <Col xs={{ size: 0, offset: 10 }}>
+          <Button size="lg" color="secondary" to="/mydreams/" tag={NavLink}>+</Button>
+        </Col>
+      </Row>
+    </Container>
+  
     <button className="myfriendsdreams">
       <span className="yellow">M</span>
       <span className="blue">Y</span>
