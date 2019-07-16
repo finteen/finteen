@@ -2,7 +2,7 @@ import React from 'react';
 import './index.css';
 import BurgerMenu from '../BurgerMenu/index';
 
-const url = 'http://localhost:3000/auth/profile/1';
+const url = '/auth/profile/1';
 
 
 class MyProfilePage extends React.Component {
