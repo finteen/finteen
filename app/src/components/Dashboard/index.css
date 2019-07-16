@@ -1,7 +1,15 @@
-.container {
-    margin-top: 30px;
- }
- .logos-dashboard {
+.nopadding {
+  padding: 0 !important;
+}
+
+.rob {
+  margin-right: 15px;
+  margin-left: 15px;
+  margin-top: 15px;
+}
+
+ 
+.logos-dashboard {
     width: 100%;
     height: auto;
  }
