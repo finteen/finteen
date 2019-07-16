@@ -38,6 +38,9 @@ class BurgerMenu extends React.Component {
           <Collapse isOpen={collapsed} navbar>
             <Nav navbar>
               <NavItem>
+                <NavLink to="/dashboard/" tag={RRNavLink}>Dashboard</NavLink>
+              </NavItem>
+              <NavItem>
                 <NavLink to="/mybudget/" tag={RRNavLink}>My budget</NavLink>
               </NavItem>
               <NavItem>

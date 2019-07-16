@@ -1,9 +1,10 @@
 import React from 'react';
-import { withRouter, NavLink as RRNavLink } from 'react-router-dom';
-import { Button, NavLink } from 'reactstrap';
+import { withRouter } from 'react-router-dom';
+import './index.css';
 import LogInForm from '../LogInForm/index';
 import Logo from '../../Assets/images/logofinteen.png';
 import LogoSil from '../../Assets/images/logosilouhette.png';
+
 
 class LoginPage extends React.Component {
   constructor(props) {
