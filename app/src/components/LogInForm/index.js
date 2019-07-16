@@ -22,7 +22,7 @@ let LogInForm = (props) => {
                 type="email"
                 name="email"
                 component={InputField}
-                placeholder="Votre e-mail"
+                placeholder="E-mail"
                 className="form-control"
               />
             </FormGroup>
@@ -31,7 +31,7 @@ let LogInForm = (props) => {
               type="password"
               name="password"
               component={InputField}
-              placeholder="Votre mot de passe"
+              placeholder="Password"
               className="form-control"
             />
             <Button color="primary" size="lg" active type="submit">Sign in</Button>
