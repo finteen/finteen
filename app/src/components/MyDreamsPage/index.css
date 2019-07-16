@@ -1,0 +1,31 @@
+.card {
+  margin-bottom: 10px;
+  color: white;
+}
+
+.card .btn {
+  background-color: #fff;
+  color:#000;
+  border:none;
+}
+
+.card1 {
+  background-color: rgba(254, 202, 87,1.0);
+}
+
+.card2 {
+  background-color: rgba(72, 219, 251,1.0);
+}
+
+.card3 {
+  background-color:  rgba(255, 107, 107,1.0);
+}
+
+
+.toggle {
+  margin-top: 10px;
+}
+
+.progress-bar {
+  background-color: rgba(29, 209, 161,1.0);
+}

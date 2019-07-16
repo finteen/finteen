@@ -12,3 +12,10 @@
     max-width: 120px;
     margin-left: auto;
 }
+
+/*redesign*/
+.shadow {
+  box-shadow: 8px 8px 12px #aaa
+}
+
+

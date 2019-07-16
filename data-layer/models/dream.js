@@ -27,7 +27,7 @@ module.exports = (sequelize, DataTypes) => {
     },
   }, {freezeTableName: true, timestamps: false});
   dream.associate = function(models) {
-    // associations can be defined here
+    
   };
   return dream;
 };

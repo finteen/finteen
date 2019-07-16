@@ -7,8 +7,8 @@ import { Provider } from 'react-redux';
 import { createStore, combineReducers } from 'redux';
 import { reducer as formReducers } from 'redux-form';
 import * as serviceWorker from './serviceWorker';
-import App from './App';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import App from './App';
 
 const rootReducer = combineReducers({
   form: formReducers,
