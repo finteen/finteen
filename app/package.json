@@ -6,7 +6,6 @@
     "bootstrap": "^4.3.1",
     "chart.js": "^2.8.0",
     "express": "^4.17.0",
-    "ibanity": "^0.2.1",
     "react": "^16.8.6",
     "react-chartkick": "^0.3.1",
     "react-dom": "^16.8.6",
