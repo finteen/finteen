@@ -36,7 +36,7 @@ const Mydreams = () => (
           </NavLink>
         </Col>
         <Col xs="6">
-          <NavLink to="/quizz" className="quizz" tag={RRNavLink}>
+          <NavLink href="https://www.finteen.be/" target="_blank">
             <img src={LogoQuizz} alt="quizz" className="logos-dashboard" />
           </NavLink>
         </Col>
