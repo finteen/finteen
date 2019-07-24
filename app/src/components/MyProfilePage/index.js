@@ -1,5 +1,6 @@
 import React from 'react';
 import './index.css';
+import { Button } from 'reactstrap';
 import BurgerMenu from '../BurgerMenu/index';
 
 const url = '/auth/profile/1';
@@ -27,15 +28,52 @@ class MyProfilePage extends React.Component {
       <div>
         <BurgerMenu />
         <ul>
-          <li>{data.name}</li>
-          <li>{data.lastname}</li>
-          <li>{data.email}</li>
-          <li>{data.mobile}</li>
-          <li>{data.pseudonyme}</li>
-          <li>{data.age}</li>
-          <li>{data.gender}</li>
-          <li>{data.iban}</li>
-          <li>{data.bic}</li>
+          <li>
+            Name:
+            {' '}
+            {data.name}
+          </li>
+          <li>
+            Last name:
+            {' '}
+            {data.lastname}
+          </li>
+          <li>
+            Email:
+            {' '}
+            {data.email}
+          </li>
+          <li>
+            Mobile:
+            {' '}
+            {data.mobile}
+          </li>
+          <li>
+            Pseudonyme:
+            {' '}
+            {data.pseudonyme}
+          </li>
+          <li>
+            Age:
+            {' '}
+            {data.age}
+          </li>
+          <li>
+            Gender:
+            {' '}
+            {data.gender}
+          </li>
+          <li>
+            Iban:
+            {' '}
+            {data.iban}
+          </li>
+          <li>
+            Bic:
+            {' '}
+            {data.bic}
+          </li>
+          <Button color="primary" className="button-edit">Edit</Button>
         </ul>
       </div>
     );
