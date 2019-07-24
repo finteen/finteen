@@ -1,0 +1,10 @@
+.n{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+ }
+ .rewards{
+    width:30%;
+    margin:auto;
+    margin-top: 40px;
+ }
