@@ -21,7 +21,7 @@ const ContactPage = () => (
           <Label for="exampleText">Text Area</Label>
           <Input type="textarea" name="text" id="exampleText" />
         </FormGroup>
-        <Button color="primary">Submit</Button>
+        <Button>Submit</Button>
       </Form>
     </Container>
   </Container-fluid>

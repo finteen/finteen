@@ -25,7 +25,7 @@ class SignupPage extends React.Component {
       fetch(url, config)
         .then((res) => {
           if (res.status === 200) {
-            history.push('/');
+            history.push('/dashboard');
           } else {
             this.setState({ err: true });
           }
