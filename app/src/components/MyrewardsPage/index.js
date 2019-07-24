@@ -1,5 +1,4 @@
 import React from 'react';
-import './index.css';
 import BurgerMenu from '../BurgerMenu/index';
 import Rewards from '../../Assets/images/unnamed.jpg';
 
