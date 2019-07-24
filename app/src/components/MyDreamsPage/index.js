@@ -14,7 +14,7 @@ const MyDreamsPage = () => (
     <h2>My dreams</h2>
     <Container>
       <Card body className="card1">
-        <CardTitle>Casque JVC</CardTitle>
+        <CardTitle>Headphones</CardTitle>
         <div>
           <div className="text-center">75%</div>
           <Progress value="75" />
@@ -23,9 +23,8 @@ const MyDreamsPage = () => (
         <UncontrolledCollapse toggler="#toggler1">
           <br />
           <div>
-            <img width="100" src={Casque} alt="blabla" />
+            <img className="headphones" width="100" src={Casque} alt="blabla" />
           </div>
-          <CardText>Casque audio.</CardText>
           <CardText>Price: 150€</CardText>
           <ButtonGroup>
             <Button>Edit</Button>
@@ -37,7 +36,7 @@ const MyDreamsPage = () => (
     </Container>
     <Container>
       <Card body className="card2">
-        <CardTitle>Concert</CardTitle>
+        <CardTitle>Live Show</CardTitle>
         <div>
           <div className="text-center">50%</div>
           <Progress value="50" />
@@ -45,9 +44,8 @@ const MyDreamsPage = () => (
         <Button className="toggle" color="info" id="toggler2">Toggle</Button>
         <UncontrolledCollapse toggler="#toggler2">
           <div>
-            <img width="100" src={Concert} alt="blublu" />
+            <img className="live-show" width="100" src={Concert} alt="blublu" />
           </div>
-          <CardText>Concert Guns N Roses.</CardText>
           <CardText>Price: 65€</CardText>
           <ButtonGroup>
             <Button>Edit</Button>
@@ -59,7 +57,7 @@ const MyDreamsPage = () => (
     </Container>
     <Container>
       <Card body className="card3">
-        <CardTitle>Vacances</CardTitle>
+        <CardTitle>Travels</CardTitle>
         <div>
           <div className="text-center">You did it !</div>
           <Progress value="100" />
@@ -67,9 +65,8 @@ const MyDreamsPage = () => (
         <Button className="toggle" color="info" id="toggler3">Toggle</Button>
         <UncontrolledCollapse toggler="#toggler3">
           <div>
-            <Media width="100" object src={Vacances} alt="bloblbo" />
+            <Media className="travels" width="100" object src={Vacances} alt="bloblbo" />
           </div>
-          <CardText>Vacances.</CardText>
           <CardText>Price: 1725€</CardText>
           <ButtonGroup>
             <Button>Edit</Button>
@@ -81,6 +78,4 @@ const MyDreamsPage = () => (
     </Container>
   </div>
 );
-
-
 export default MyDreamsPage;
