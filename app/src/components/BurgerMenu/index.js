@@ -50,13 +50,13 @@ class BurgerMenu extends React.Component {
                 <NavLink to="/myrewards" tag={RRNavLink}>My rewards</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink to="/quizz" tag={RRNavLink}>Take a quizz</NavLink>
+                <NavLink to="https://www.finteen.be/" tag={RRNavLink}>Take a quizz</NavLink>
               </NavItem>
               <NavItem>
                 <NavLink to="/myprofile" tag={RRNavLink}>Profile</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink to="/contactus" tag={RRNavLink}>Contact</NavLink>
+                <NavLink to="/contactus" tag={RRNavLink}>Contact us</NavLink>
               </NavItem>
               <NavItem>
                 <NavLink to="/settings" tag={RRNavLink}>Settings</NavLink>
