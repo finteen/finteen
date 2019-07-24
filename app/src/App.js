@@ -10,6 +10,7 @@ import MyDreamsPage from './components/MyDreamsPage';
 import QuizzPage from './components/QuizzPage';
 import MyProfilePage from './components/MyProfilePage';
 import ContactPage from './components/ContactPage';
+import SettingsPage from './components/SettingsPage';
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
         <Route path="/quizz/" component={QuizzPage} />
         <Route path="/myprofile/" component={MyProfilePage} />
         <Route path="/contactus/" component={ContactPage} />
+        <Route path="/settings/" component={SettingsPage} />
       </Switch>
     </div>
   );

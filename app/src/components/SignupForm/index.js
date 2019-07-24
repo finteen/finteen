@@ -70,6 +70,7 @@ let SignupForm = (props) => {
               component={SelectField}
               className="form-control"
             >
+              <option value="">Sex</option>
               <option>Female</option>
               <option>Male</option>
               <option>Neutral</option>
