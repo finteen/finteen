@@ -15,7 +15,7 @@ const ContactPage = () => (
       <Form>
         <FormGroup>
           <Label for="exampleEmail">Email</Label>
-          <Input type="email" name="email" id="exampleEmail" placeholder="with a placeholder" />
+          <Input type="email" name="email" id="exampleEmail" placeholder="dupont@hotmail.com" />
         </FormGroup>
         <FormGroup>
           <Label for="exampleText">Text Area</Label>
